@@ -1,0 +1,112 @@
+{
+  "projects": [
+    {
+      "id": "card-it",
+      "published": true,
+      "featured": true,
+      "title": "Card It",
+      "shortDescription": "Créez vos cartes, testez votre mémoire et souvenez-vous-en !",
+      "fullDescription": [
+        "Card-It permet la création de paquets de cartes destinés à être utilisés comme aides-mémoire techniques (à la manière de post-it, mais de manière organisée).",
+        "Pour ce projet fullstack, j’ai utilisé Node.js, Express et PostgreSQL en backend, ainsi que Nuxt.js et Tailwind CSS en frontend.",
+        "J’ai volontairement utilisé un minimum de librairies, quitte à réinventer la roue (validation from scratch dans le front par exemple) juste pour le plaisir de pratiquer et de me mettre en difficulté pour apprendre plus et me remettre au backend.",
+        "Pour la base de donnée, j’ai utilisé Supabase, qui propose une base de donnée PostgreSQL gratuite et facile à utiliser.",
+        "Le projet est actuellement disponible sur Render. Il est fonctionnel, mais ayant une offre gratuite, il se peut que le site soit lent à charger (le serveur se met en veille après un certain temps d’inactivité). Vous pouvez également voir le projet sur mon github Card-It."
+      ],
+      "technologies": ["Nuxt 3", "TailwindCSS", "Postgres", "Node.js", "Express"],
+      "imageUrl": "/card-it.jpg",
+      "githubUrl": "https://github.com/VivienG-Dev/Card-It",
+      "projectUrl": "https://card-it-frontend.onrender.com/"
+    },
+    {
+      "id": "star-citizen-tool",
+      "published": true,
+      "featured": true,
+      "title": "Star Citizen Tool",
+      "shortDescription": "Consultez la liste des vaisseaux du jeu Star Citizen.",
+      "fullDescription": [
+        "Projet réalisé avec Nuxt 3, Tailwind CSS et TypeScript permettant de consulter les caractéristiques des vaisseaux du jeu Star Citizen.",
+        "J’ai utilisé l’API REST “StarCitizen-API” pour récupérer les données des vaisseaux du jeu. Ce choix était motivé par le besoin de pratiquer l’implémentation d’une API externe dans un projet Nuxt. Ensuite, j’ai utilisé “Tailwind CSS” pour le design du site ainsi que “TypeScript” pour le typage des données.",
+        "J’ai dû créer mon propre système de pagination côté front-end car l’API ne permettait pas de récupérer les données de cette manière. Cela a entraîné un temps de chargement relativement long puisque toutes les données doivent être récupérées en une seule fois.",
+        "Il manque encore quelques fonctionnalités, comme le filtrage par catégorie. Cependant, l’API présente de grandes lacunes qui ne permettent pas de réaliser cela “facilement”. Je devrais donc le faire côté front-end une fois de plus. Malgré cela, le projet est fonctionnel et m’a permis de pratiquer avec Nuxt 3 et Tailwind CSS."
+      ],
+      "technologies": ["Nuxt", "TypeScript", "TailwindCSS", "StarCitizen-API", "Rest API"],
+      "imageUrl": "/star-citizen-tool.jpg",
+      "githubUrl": "https://github.com/VivienG-Dev/star-citizen-tool",
+      "projectUrl": "https://www.star-citizen-tool.vivieng.com/"
+    },
+    {
+      "id": "online-resume",
+      "published": true,
+      "featured": false,
+      "title": "Online Resume",
+      "shortDescription": "Mon cv en format web",
+      "fullDescription": [
+        "Online Resume est un petit test technique que j’ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
+      ],
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "imageUrl": "/online-resume.jpg",
+      "githubUrl": "https://github.com/VivienG-Dev/cv_webformat_vivieng",
+      "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
+    },
+    {
+      "id": "groupomania",
+      "published": true,
+      "featured": false,
+      "title": "Groupomania",
+      "shortDescription": "Mon cv en format web",
+      "fullDescription": [
+        "Groupomania est le projet 7 du parcours Développeur web d’OpenClassrooms. L’objectif était de créer un réseau social interne pour une société fictive “Groupomania” en suivant un cahier des charges et certaines recommandations.",
+        "Le back-end a été réalisé avec Node.js, Express et MySQL avec l’ORM Sequelize. Quand au front-end j’ai utilisé React. J’ai également utilisé Bootstrap pour faciliter la mise en forme."
+      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
+      "imageUrl": "/groupomania.jpg",
+      "githubUrl": "https://github.com/VivienG-Dev/VivienGrenier_7_14022022"
+    },
+    {
+      "id": "delicious-japan",
+      "published": true,
+      "featured": true,
+      "title": "Delicious Japan",
+      "shortDescription": "Site conçu sur le thème de la nourriture japonaise.",
+      "fullDescription": [
+        "Delicious Japan est un site conçu avec le trio HTML, CSS et JavaScript sur le thème de la nourriture japonaise.",
+        "Il est parfaitement responsive et dispose d’un “dark mode”.",
+        "Le design original provient de Pixelgrade."
+      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
+      "imageUrl": "/delicious-japan.jpg",
+      "projectUrl": "https://www.deliciousjapan.vivieng.com/",
+      "mockupUrl": "https://dribbble.com/shots/1560982-Rosa-Restaurant-Website"
+    },
+    {
+      "id": "picture-perfect",
+      "published": true,
+      "featured": false,
+      "title": "Picture Perfect",
+      "shortDescription": "Site réalisé à partir du PSD de Blaz Robar.",
+      "fullDescription": [
+        "Cet exercise m’a permis d’apprendre à mieux gérer la création d’un site à partir d’un PSD. J’ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
+      ],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
+      "imageUrl": "/picture-perfect.jpg",
+      "projectUrl": "https://www.pictureperfect.vivieng.com/",
+      "mockupUrl": "https://dribbble.com/shots/2493496-Free-PSD-One-Page-Mobile-App"
+    },
+    {
+      "id": "tsl-language-school",
+      "published": true,
+      "featured": false,
+      "title": "TSL Language School",
+      "shortDescription": "Rénovation du site web d’une école Thaïlandaise",
+      "fullDescription": [
+        "Rénovation du site web de l’école Thaïlandaise dans laquelle j’ai étudié un certain temps.",
+        "Le site officiel est toujours disponible. Malheureusement, l'école a changé."
+      ],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
+      "imageUrl": "/tsl-language-school.jpg",
+      "projectUrl": "https://www.languageschool.vivieng.com/",
+      "originalUrl": "https://tlslanguageschool.com/"
+    }
+  ]
+}
