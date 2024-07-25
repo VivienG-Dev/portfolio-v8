@@ -1,5 +1,4 @@
 import { Section } from "./Section";
-import { Code } from "@/components/code";
 import { Button } from "@/components/ui/button";
 import { File } from "lucide-react";
 import Link from "next/link";
@@ -7,20 +6,26 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <div className="w-full h-dvh bg-gray-200">
-      <Section className="flex flex-col xl:flex-row justify-center items-center h-full">
-        <div className="flex-1 order-2 xl:order-1 flex flex-col text-center xl:justify-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-2 text-customGold">VIVIENG</h2>
-          <h3 className="text-lg lg:text-1xl mb-4 text-gray-600">Développeur Web front-end freelance</h3>
-          <p className="mb-6 text-gray-700">
-            Je suis un <Code>développeur web</Code> et <Code>photographe</Code> basé en France.
+    <div className="w-full min-h-[calc(100vh-68px)] md:h-[calc(100dvh-68px)] bg-gray-200">
+      <Section className="flex flex-col xl:flex-row justify-center items-center h-[75vh] md:h-full">
+        <div className="flex-1 order-2 xl:order-1 flex flex-col xl:justify-center">
+          <h2 className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-2 text-customGold">VIVIENG</h2>
+          <h3 className="text-center lg:text-left text-lg lg:text-1xl mb-4 text-gray-600">
+            Développeur Web Full Stack
+          </h3>
+          <p className="mb-6 text-gray-700 text-justify">
+            Développeur Web Full Stack passionné par la création d&#39;applications web innovantes de A à Z. Expertise
+            en Vue 3, Nuxt, développement d&#39;APIs, et autres technologies modernes. Capable de transformer des
+            concepts en solutions fonctionnelles et intuitives.
           </p>
-          <Link href="https://www.linkedin.com/in/vivien-grenier/">
-            <Button className="gap-2">
-              VOIR MON CV
-              <File className="w-4 h-4" />
+          <div className="text-center lg:text-left">
+            <Button className="gap-2 inline-flex" asChild>
+              <Link href="https://www.linkedin.com/in/vivien-grenier/">
+                VOIR MON CV
+                <File className="w-4 h-4" />
+              </Link>
             </Button>
-          </Link>
+          </div>
         </div>
         <div className="flex-1 order-1 xl:order-2 flex items-end justify-center lg:justify-end h-full">
           <picture className="h-full w-full flex items-end justify-center xl:justify-end">
