@@ -7,7 +7,7 @@ export const Section = (
     <section className={`relative max-w-7xl px-4 m-auto gap-4 ${props.className} `}>
       {props.children}{" "}
       <div
-        className={`absolute top-[50%] text-customGold/50 text-2xl font-bold hidden md:flex select-none ${props.rotate} ${props.position}`}
+        className={`absolute top-[50%] text-customGold/50 text-2xl font-bold hidden xl:flex select-none ${props.rotate} ${props.position}`}
       >
         {props.title}
       </div>
