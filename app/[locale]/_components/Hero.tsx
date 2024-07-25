@@ -4,20 +4,19 @@ import { File } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
+import { useTranslations } from "next-intl";
+
 export const Hero = () => {
+  const t = useTranslations("HeroComponent");
   return (
     <div className="w-full min-h-[calc(100vh-68px)] md:h-[calc(100dvh-68px)] bg-gray-200">
       <Section className="flex flex-col xl:flex-row justify-center items-center h-[75vh] md:h-full">
         <div className="flex-1 order-2 xl:order-1 flex flex-col xl:justify-center">
           <h2 className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-2 text-customGold">VIVIENG</h2>
           <h3 className="text-center lg:text-left text-lg lg:text-1xl mb-4 text-gray-600">
-            Développeur Web Full Stack
+            Développeur Web Full Stack {t("title")}
           </h3>
-          <p className="mb-6 text-gray-700 text-justify">
-            Développeur Web Full Stack passionné par la création d&#39;applications web innovantes de A à Z. Expertise
-            en Vue 3, Nuxt, développement d&#39;APIs, et autres technologies modernes. Capable de transformer des
-            concepts en solutions fonctionnelles et intuitives.
-          </p>
+          <p className="mb-6 text-gray-700 text-justify">{t("description")}</p>
           <div className="text-center lg:text-left">
             <Button className="gap-2 inline-flex" asChild>
               <Link href="https://www.vivieng.com/images/CV_Grenier_Vivien_2024.pdf">

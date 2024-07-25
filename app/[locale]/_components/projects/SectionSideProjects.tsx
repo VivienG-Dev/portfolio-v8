@@ -11,7 +11,7 @@ import { BreadcrumbComponent } from "./Breadcrumb";
 
 export const SectionSideProjects = () => {
   const pathname = usePathname();
-  const isIndexPage = pathname === "/";
+  const isIndexPage = pathname === "/fr" || pathname === "/en";
   const projects = isIndexPage ? getAllProjects().filter((project) => project.featured) : getAllProjects();
 
   return (
@@ -26,7 +26,7 @@ export const SectionSideProjects = () => {
         ))}
       </div>
       {isIndexPage && (
-        <Link className="text-primary text-center" href="/projects">
+        <Link className="text-primary text-center" href={`${pathname}/projects`}>
           <Button variant="link">Voir tous les projets</Button>
         </Link>
       )}
