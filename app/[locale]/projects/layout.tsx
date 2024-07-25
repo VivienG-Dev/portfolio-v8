@@ -21,9 +21,5 @@ export default async function ProjectLayout({
 }) {
   unstable_setRequestLocale(locale);
   const messages = await getMessages();
-  return (
-    <body>
-      <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
-    </body>
-  );
+  return <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>;
 }

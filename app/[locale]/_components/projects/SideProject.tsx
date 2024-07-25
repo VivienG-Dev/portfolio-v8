@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 type SideProjectProps = {
   id: string;
@@ -11,10 +12,13 @@ type SideProjectProps = {
 };
 
 export const SideProject = ({ title, shortDescription, id, imageUrl }: SideProjectProps) => {
+  const pathname = usePathname();
+  const locale = pathname.split("/")[1];
+  console.log(locale);
   return (
     <div className="flex md:flex-col items-center gap-2 flex-1 shadow md:shadow-none bg-card border border-1 md:border-none md:bg-transparent rounded-lg p-4 xl:p-0 hover:shadow-lg md:hover:shadow-none transition-shadow duration-300 ">
       <div className="flex-shrink-0 bg-transparent md:bg-card rounded-lg flex items-center justify-center overflow-hidden p-0 md:p-4 shadow hover:shadow-lg transition-shadow duration-300">
-        <Link href={`/projects/${id}`}>
+        <Link href={`${locale}/projects/${id}`}>
           <Image
             src={imageUrl}
             alt={title}
