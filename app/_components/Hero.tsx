@@ -20,7 +20,7 @@ export const Hero = () => {
           </p>
           <div className="text-center lg:text-left">
             <Button className="gap-2 inline-flex" asChild>
-              <Link href="https://www.linkedin.com/in/vivien-grenier/">
+              <Link href="https://www.vivieng.com/images/CV_Grenier_Vivien_2024.pdf">
                 VOIR MON CV
                 <File className="w-4 h-4" />
               </Link>
@@ -28,7 +28,7 @@ export const Hero = () => {
           </div>
         </div>
         <div className="flex-1 order-1 xl:order-2 flex items-end justify-center lg:justify-end h-full">
-          <picture className="h-full w-full flex items-end justify-center xl:justify-end">
+          <picture>
             <source media="(max-width: 1200px)" srcSet="/vivieng-hero-small.jpg" />
             <Image
               src="/vivieng-hero-big.png"
@@ -36,7 +36,7 @@ export const Hero = () => {
               width={1000}
               height={1500}
               priority
-              className="w-auto h-40 xl:h-[80vh] xl:max-h-[80vh] max-w-none object-cover rounded-full xl:rounded-none"
+              className="w-auto h-40 xl:h-[80vh] xl:max-h-[80vh] 2xl:h-[70vh] 2xl:max-h[70vh] max-w-none object-cover rounded-full xl:rounded-none"
             />
           </picture>
         </div>

@@ -21,7 +21,7 @@ export const SideProject = ({ title, shortDescription, id, imageUrl }: SideProje
             width={320}
             height={320}
             className="rounded-lg w-full md:w-auto"
-            sizes="(max-width: 768px) 20vw, 320px"
+            sizes="(max-width: 768px) 25vw, (max-width: 1200px) 50vw, 30vw"
             placeholder="blur"
             blurDataURL={imageUrl}
           />
