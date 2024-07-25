@@ -13,16 +13,6 @@ export const Header = () => {
         <div className="flex-1">
           <nav className="flex-1 flex justify-end">
             <ul className="flex space-x-2">
-              {/* <li>
-                <Button className="gap-2" variant="ghost">
-                  Réalisations
-                </Button>
-              </li> */}
-              {/* <li>
-                <Button className="gap-2" variant="ghost">
-                  Contact
-                </Button>
-              </li> */}
               <li>
                 <ModeToggle />
               </li>
