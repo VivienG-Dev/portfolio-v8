@@ -4,7 +4,7 @@ import { Spacing } from "@/components/spacing";
 import { SectionExperiences } from "./_components/experiences/SectionExperiences";
 import { SectionSkills } from "./_components/skills/SectionSkills";
 import { Footer } from "./_components/Footer";
-import { Contact } from "./_components/Contact";
+import { Contact } from "./_components/contact/SectionContact";
 import { SectionSideProjects } from "./_components/projects/SectionSideProjects";
 
 export default function Home() {
