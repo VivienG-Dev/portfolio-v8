@@ -1,7 +1,13 @@
 import { PropsWithChildren } from "react";
 
 export const Section = (
-  props: PropsWithChildren<{ className?: string; title?: string; rotate?: string; position?: string }>
+  props: PropsWithChildren<{
+    className?: string;
+    title?: string;
+    rotate?: string;
+    position?: string;
+    ref?: React.RefObject<null>;
+  }>
 ) => {
   return (
     <section className={`relative max-w-7xl px-4 m-auto gap-4 ${props.className} `}>
