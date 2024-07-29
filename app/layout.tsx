@@ -8,8 +8,50 @@ import { ThemeProvider } from "@/components/theme-provider";
 const anekTelugu = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
 export const metadata: Metadata = {
-  title: "VivienG | Portfolio",
-  description: "Créateur de projet web et développeur web.",
+  title: "Développeur web | VivienG",
+  description:
+    "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
+  keywords: ["web development", "portfolio", "projects", "frontend", "backend", "fullstack"],
+  authors: [{ name: "Vivien G" }],
+  openGraph: {
+    title: "Développeur web | VivienG",
+    description:
+      "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
+    url: "https://www.your-portfolio-url.com",
+    siteName: "Développeur web | VivienG",
+    images: [
+      {
+        url: "https://www.vivieng.com/images/vivieng-meta-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "VivienG Portfolio Preview",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Développeur web | VivienG",
+    description:
+      "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
+    images: ["https://www.vivieng.com/images/vivieng-meta-image.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+  },
 };
 
 export default function RootLayout({
