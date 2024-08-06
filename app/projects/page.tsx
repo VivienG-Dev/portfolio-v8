@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   title: "Mes side projects | VivienG",
   description: "Liste de tous mes side projects !",
   keywords: ["web development", "portfolio", "projects", "frontend", "backend", "fullstack"],
-  authors: [{ name: "Vivien G" }],
+  authors: [{ name: "VivienG" }],
   openGraph: {
     title: "Mes side projects | VivienG",
     description: "Liste de tous mes side projects !",
-    url: "https://www.your-portfolio-url.com",
+    url: "https://www.vivieng.com",
     siteName: "Développeur web | VivienG",
     images: [
       {

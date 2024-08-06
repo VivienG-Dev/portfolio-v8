@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   description:
     "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
   keywords: ["web development", "portfolio", "projects", "frontend", "backend", "fullstack"],
-  authors: [{ name: "Vivien G" }],
+  authors: [{ name: "VivienG" }],
   openGraph: {
     title: "Développeur web | VivienG",
     description:
       "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
-    url: "https://www.your-portfolio-url.com",
+    url: "https://www.vivieng.com",
     siteName: "Développeur web | VivienG",
     images: [
       {
