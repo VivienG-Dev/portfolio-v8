@@ -50,7 +50,6 @@ export const metadata: Metadata = {
   },
 };
 
-// Add this separate viewport export
 export const viewport = {
   width: "device-width",
   initialScale: 1,
