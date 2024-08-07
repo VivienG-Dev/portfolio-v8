@@ -30,9 +30,8 @@ export const Experiences = ({
             width={64}
             height={64}
             className="rounded-sm"
-            sizes="(max-width: 768px) 32px, 64px"
-            placeholder="blur"
-            blurDataURL={imageSrc}
+            sizes="(max-width: 768px) 64px, 64px"
+            unoptimized
           />
         </div>
         <div>

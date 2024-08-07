@@ -17,10 +17,9 @@ export const SingleProject = ({ project }: SingleProjectProps) => {
           alt={project.title}
           width={450}
           height={450}
-          className="rounded-lg w-full md:w-auto"
+          className="rounded-lg w-full md:max-w-[350px]"
           sizes="(max-width: 768px) 20vw, 450px"
-          placeholder="blur"
-          blurDataURL={project.imageUrl}
+          unoptimized
         />
       </div>
       <div>

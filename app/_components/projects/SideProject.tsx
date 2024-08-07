@@ -20,10 +20,9 @@ export const SideProject = ({ title, shortDescription, id, imageUrl }: SideProje
             alt={title}
             width={320}
             height={320}
-            className="rounded-lg w-full md:w-auto"
+            className="rounded-lg w-full max-w-[120px] md:max-w-[220px] lg:max-w-[320px] md:w-auto"
             sizes="(max-width: 768px) 25vw, (max-width: 1200px) 50vw, 30vw"
-            placeholder="blur"
-            blurDataURL={imageUrl}
+            unoptimized
           />
         </Link>
       </div>
