@@ -83,6 +83,7 @@ export const Hero = () => {
               width={1000}
               height={1500}
               priority
+              unoptimized
               className="w-auto h-40 xl:h-[80vh] xl:max-h-[80vh] 2xl:h-[70vh] 2xl:max-h[70vh] max-w-none object-cover rounded-full xl:rounded-none"
             />
           </picture>
