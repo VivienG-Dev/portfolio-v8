@@ -4,6 +4,9 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Header } from "./_components/Header";
+import { Footer } from "./_components/Footer";
+import { Spacing } from "@/components/spacing";
 
 const anekTelugu = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
@@ -66,7 +69,10 @@ export default function RootLayout({
         className={`${GeistSans.variable} ${GeistMono.variable} ${anekTelugu.variable} font-sans antialiased h-full bg-background text-foreground`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <Header />
           {children}
+          <Spacing />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
