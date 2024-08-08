@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     siteName: "Développeur web | VivienG",
     images: [
       {
-        url: "https://www.vivieng.com/images/vivieng-meta-image.jpg",
+        url: "https://www.vivieng.com/vivieng-meta-image.jpg",
         width: 1200,
         height: 630,
         alt: "VivienG Portfolio Preview",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Mes side projects | VivienG",
     description: "Liste de tous mes side projects !",
-    images: ["https://www.vivieng.com/images/vivieng-meta-image.jpg"],
+    images: ["https://www.vivieng.com/vivieng-meta-image.jpg"],
   },
   robots: {
     index: true,
