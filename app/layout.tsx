@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Développeur web | VivienG",
     images: [
       {
-        url: "https://www.vivieng.com/images/vivieng-meta-image.jpg",
+        url: "https://www.vivieng.com/vivieng-meta-image.jpg",
         width: 1200,
         height: 630,
         alt: "VivienG Portfolio Preview",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "Développeur web | VivienG",
     description:
       "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
-    images: ["https://www.vivieng.com/images/vivieng-meta-image.jpg"],
+    images: ["https://www.vivieng.com/vivieng-meta-image.jpg"],
   },
   robots: {
     index: true,
