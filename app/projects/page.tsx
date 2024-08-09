@@ -1,6 +1,5 @@
-import { Metadata } from "next";
 import { Spacing } from "@/components/spacing";
-import { SectionSideProjects } from "../_components/projects/SectionSideProjects";
+import { SectionSideProjects } from "@/app/_components/projects/SectionSideProjects";
 export default function ProjectsPage() {
   return (
     <main>
