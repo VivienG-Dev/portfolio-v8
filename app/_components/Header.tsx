@@ -9,7 +9,9 @@ export const Header = () => {
   return (
     <header className="sticky top-0 bg-white dark:bg-background py-4 z-50">
       <Section className="flex items-baseline justify-between">
-        <h1 className="text-lg font-bold font text-customGold">VIVIENG.COM</h1>
+        <h1 className="text-lg font-bold font text-customGold">
+          <Link href="/">VIVIENG.COM</Link>
+        </h1>
         <div className="flex-1">
           <nav className="flex-1 flex justify-end">
             <ul className="flex space-x-2">
