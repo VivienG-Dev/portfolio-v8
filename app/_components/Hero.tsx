@@ -62,7 +62,7 @@ export const Hero = () => {
           </motion.p>
           <motion.div className="text-center lg:text-left" variants={itemVariants}>
             <Button className="gap-2 inline-flex" asChild>
-              <Link href="https://www.vivieng.com/images/CV_Grenier_Vivien_2024.pdf">
+              <Link href="/CV_Grenier_Vivien_2024.pdf">
                 VOIR MON CV
                 <File className="w-4 h-4" />
               </Link>
