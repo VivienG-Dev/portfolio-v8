@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio v8
+
+This is the eighth iteration of my personal portfolio website, built with Next.js and Tailwind CSS. The purpose of this
+project is to showcase my development skills and recent work. It is a fully responsive, single-page application designed
+with a focus on performance and accessibility.
+
+## Features
+
+- **Next.js**: Utilizes server-side rendering for better performance and SEO.
+- **Tailwind CSS**: Rapidly build custom designs using utility-first CSS.
+- **TypeScript**: Ensures type safety and reduces runtime errors.
+- **Responsive Design**: Fully responsive and optimized for various screen sizes.
+- **Accessible**: Implements best practices to ensure accessibility for all users.
 
 ## Getting Started
 
-First, run the development server:
+To get a local copy up and running, follow these simple steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Make sure you have the following installed:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js
+- npm or yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Installation
 
-## Learn More
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/VivienG-Dev/portfolio-v8.git
+   ```
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- `app/`: Main application directory.
+- `components/`: Reusable UI components.
+- `content/`: Static content for the site.
+- `lib/`: Utility functions and helpers.
+- `public/`: Static assets like images and fonts.
+- `styles/`: Global styles.
