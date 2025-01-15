@@ -8,12 +8,12 @@ type SkillsProps = {
 };
 
 export const Skills = ({ title, description, technologies }: SkillsProps) => (
-  <Card className="hover:shadow-lg transition-shadow duration-300">
+  <Card className="w-full hover:shadow-lg transition-shadow duration-300">
     <CardHeader>
       <h3 className="text-lg text-center font-semibold">{title}</h3>
     </CardHeader>
     <CardContent>
-      <p className="mb-4 text-sm ">{description}</p>
+      <p className="mb-4 text-sm">{description}</p>
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech, index) => (
           <Badge key={index} className="text-background">

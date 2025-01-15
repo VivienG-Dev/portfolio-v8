@@ -27,7 +27,7 @@ export const SectionSkills = () => {
       <Title title="Compétences" />
       <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
         <motion.div
-          className="h-full flex"
+          className="flex"
           variants={createVariants(0)}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -39,19 +39,19 @@ export const SectionSkills = () => {
           />
         </motion.div>
         <motion.div
-          className="h-full flex"
+          className="flex"
           variants={createVariants(0.2)}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
           <Skills
             title="Back-end"
-            description="Pour le back-end, j'utilise des technologies comme Node.js associée à Express. J'utilise MySQL ou PostgreSQL pour la base de données."
-            technologies={["Node.js", "Express", "MySQL", "PostgreSQL"]}
+            description="Pour le back-end, j'utilise des technologies comme Node.js associée à Express ou NestJS. J'utilise MySQL ou PostgreSQL pour la base de données."
+            technologies={["Node.js", "Express", "NestJS", "MySQL", "PostgreSQL"]}
           />
         </motion.div>
         <motion.div
-          className="h-full flex"
+          className="flex"
           variants={createVariants(0.4)}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
