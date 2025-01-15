@@ -1,22 +1,32 @@
 {
   "projects": [
     {
-      "id": "card-it",
+      "id": "manga-hive",
       "published": true,
       "featured": true,
-      "title": "Card It",
-      "shortDescription": "Créez vos cartes, testez votre mémoire et souvenez-vous-en !",
+      "title": "Manga Hive",
+      "shortDescription": "Découvrez des mangas, ajoutez-les à votre bibliothèque, notez-les et partagez votre bibliothèque avec vos amis !",
       "fullDescription": [
-        "Card-It permet la création de paquets de cartes destinés à être utilisés comme aides-mémoire techniques (à la manière de post-it, mais de manière organisée).",
-        "Pour ce projet fullstack, j’ai utilisé Node.js, Express et PostgreSQL en backend, ainsi que Nuxt.js et Tailwind CSS en frontend.",
+        "Manga Hive est un site web permettant de découvrir des mangas, ajouter des mangas à votre bibliothèque, les noter et partager votre bibliothèque avec vos amis.",
+        "Pour ce projet fullstack, j’ai utilisé NestJS, MySQL en backend, ainsi que Vue.js et Tailwind CSS en frontend.",
         "J’ai volontairement utilisé un minimum de librairies, quitte à réinventer la roue (validation from scratch dans le front par exemple) juste pour le plaisir de pratiquer et de me mettre en difficulté pour apprendre plus et me remettre au backend.",
-        "Pour la base de donnée, j’ai utilisé Supabase, qui propose une base de donnée PostgreSQL gratuite et facile à utiliser.",
-        "Le projet est actuellement disponible sur Render. Il est fonctionnel, mais ayant une offre gratuite, il se peut que le site soit lent à charger (le serveur se met en veille après un certain temps d’inactivité). Vous pouvez également voir le projet sur mon github Card-It."
+        "J'ai utilisé plusieurs librairies pour le front, comme shadcn/ui pour les composants (certains sont personnalisés), Vee-validate pour la validation des formulaires, Zod pour la validation des données, Pinia pour la gestion des données, et plusieurs autres.",
+        "Pour le back, j'ai utilisé NestJS, MySQL, Prisma et JWT pour la gestion des utilisateurs. Mais encore Passport pour l'authentification local et Google pour l'authentification OAuth.",
+        "Le projet est actuellement en version 1.0.0. Il est disponible via mon hébergeur O2switch et completement fonctionnel."
       ],
-      "technologies": ["Nuxt 3", "TailwindCSS", "Postgres", "Node.js", "Express"],
-      "imageUrl": "/card-it.jpg",
-      "githubUrl": "https://github.com/VivienG-Dev/Card-It",
-      "projectUrl": "https://card-it-frontend.onrender.com/"
+      "technologies": [
+        "NestJS",
+        "MySQL",
+        "Prisma",
+        "JWT",
+        "Passport",
+        "Google OAuth",
+        "Vue.js",
+        "TailwindCSS"
+      ],
+      "imageUrl": "/manga-hive.jpg",
+      "githubUrl": "",
+      "projectUrl": "https://www.manga-hive.com/"
     },
     {
       "id": "star-citizen-tool",
@@ -30,7 +40,13 @@
         "J’ai dû créer mon propre système de pagination côté front-end car l’API ne permettait pas de récupérer les données de cette manière. Cela a entraîné un temps de chargement relativement long puisque toutes les données doivent être récupérées en une seule fois.",
         "Il manque encore quelques fonctionnalités, comme le filtrage par catégorie. Cependant, l’API présente de grandes lacunes qui ne permettent pas de réaliser cela “facilement”. Je devrais donc le faire côté front-end une fois de plus. Malgré cela, le projet est fonctionnel et m’a permis de pratiquer avec Nuxt 3 et Tailwind CSS."
       ],
-      "technologies": ["Nuxt", "TypeScript", "TailwindCSS", "StarCitizen-API", "Rest API"],
+      "technologies": [
+        "Nuxt",
+        "TypeScript",
+        "TailwindCSS",
+        "StarCitizen-API",
+        "Rest API"
+      ],
       "imageUrl": "/star-citizen-tool.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/star-citizen-tool",
       "projectUrl": "https://www.star-citizen-tool.vivieng.com/"
@@ -44,7 +60,11 @@
       "fullDescription": [
         "Online Resume est un petit test technique que j’ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
       ],
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
       "imageUrl": "/online-resume.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/cv_webformat_vivieng",
       "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
@@ -59,7 +79,12 @@
         "Groupomania est le projet 7 du parcours Développeur web d’OpenClassrooms. L’objectif était de créer un réseau social interne pour une société fictive “Groupomania” en suivant un cahier des charges et certaines recommandations.",
         "Le back-end a été réalisé avec Node.js, Express et MySQL avec l’ORM Sequelize. Quand au front-end j’ai utilisé React. J’ai également utilisé Bootstrap pour faciliter la mise en forme."
       ],
-      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
+      "technologies": [
+        "React",
+        "Bootstrap",
+        "Node.js",
+        "MySQL"
+      ],
       "imageUrl": "/groupomania.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/VivienGrenier_7_14022022"
     },
@@ -74,7 +99,12 @@
         "Il est parfaitement responsive et dispose d’un “dark mode”.",
         "Le design original provient de Pixelgrade."
       ],
-      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
+      "technologies": [
+        "React",
+        "Bootstrap",
+        "Node.js",
+        "MySQL"
+      ],
       "imageUrl": "/delicious-japan.jpg",
       "projectUrl": "https://www.deliciousjapan.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/1560982-Rosa-Restaurant-Website"
@@ -88,7 +118,12 @@
       "fullDescription": [
         "Cet exercise m’a permis d’apprendre à mieux gérer la création d’un site à partir d’un PSD. J’ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
       ],
-      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "SASS"
+      ],
       "imageUrl": "/picture-perfect.jpg",
       "projectUrl": "https://www.pictureperfect.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/2493496-Free-PSD-One-Page-Mobile-App"
@@ -103,7 +138,12 @@
         "Rénovation du site web de l’école Thaïlandaise dans laquelle j’ai étudié un certain temps.",
         "Le site officiel est toujours disponible. Malheureusement, l'école a changé."
       ],
-      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "SASS"
+      ],
       "imageUrl": "/tsl-language-school.jpg",
       "projectUrl": "https://www.languageschool.vivieng.com/",
       "originalUrl": "https://tlslanguageschool.com/"
