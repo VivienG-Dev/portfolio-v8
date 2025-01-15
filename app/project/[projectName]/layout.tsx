@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: { projectName: stri
       card: "summary_large_image",
       title,
       description,
-      images: [`https://www.vivieng.com${project.imageUrl}`], // Again, consider using a project-specific image
+      images: [`https://www.vivieng.com${project.imageUrl}`],
     },
     robots: {
       index: true,
