@@ -36,7 +36,9 @@ export const SectionSideProjects = () => {
   const isInView = useInView(containerRef, { once: true, amount: 0.1 });
   const pathname = usePathname();
   const isIndexPage = pathname === "/";
-  const projects = isIndexPage ? getAllProjects().filter((project) => project.featured) : getAllProjects();
+  const projects = isIndexPage
+    ? getAllProjects().filter((project) => project.featured && project.published)
+    : getAllProjects().filter((project) => project.published);
 
   return (
     <Section className="flex flex-col gap-4" title="Side Projects" rotate="-rotate-90" position="-right-20">
