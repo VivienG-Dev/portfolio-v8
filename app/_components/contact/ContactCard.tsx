@@ -12,7 +12,7 @@ type ContactCardProps = {
 export const ContactCard = ({ title, description, Icon, url }: ContactCardProps) => {
   return (
     <Link href={url}>
-      <Card className="hover:shadow-lg transition-shadow duration-300 p-2 flex items-center gap-4 w-full">
+      <Card className="hover:shadow-lg dark:border dark:border-customGold/30 dark:hover:border-customGold transition-all duration-300 p-2 flex items-center gap-4 w-full">
         <div className="flex-shrink-0 w-12 h-12 bg-accent/70 text-accent-foreground rounded-lg flex items-center justify-center overflow-hidden p-2">
           <Icon size={24} />
         </div>

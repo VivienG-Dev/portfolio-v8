@@ -8,7 +8,7 @@ type SkillsProps = {
 };
 
 export const Skills = ({ title, description, technologies }: SkillsProps) => (
-  <Card className="w-full hover:shadow-lg transition-shadow duration-300">
+  <Card className="w-full hover:shadow-lg dark:border dark:border-customGold/30 dark:hover:border-customGold transition-all duration-300">
     <CardHeader>
       <h3 className="text-lg text-center font-semibold">{title}</h3>
     </CardHeader>

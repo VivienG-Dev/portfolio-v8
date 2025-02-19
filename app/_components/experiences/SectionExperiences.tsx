@@ -38,7 +38,7 @@ export const SectionExperiences = () => {
           animate={isInView ? "visible" : "hidden"}
           className="w-full"
         >
-          <Card className="flex flex-col p-4 h-full">
+          <Card className="flex flex-col p-4 h-full dark:border dark:border-customGold/30 dark:hover:border-customGold transition-all duration-300">
             <div className="flex-grow overflow-auto">
               <Experiences
                 imageSrc="/card-it.jpg"
