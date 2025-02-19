@@ -34,8 +34,8 @@ export const SectionSkills = () => {
         >
           <Skills
             title="Front-end"
-            description="Pour le front-end, mon framework principale reste Vue.js en utilisant la Composition API. Je travaille également avec Nuxt.js mais il m'arrive de travailler avec Next.js !"
-            technologies={["Vue.js", "Nuxt.js", "Next.js", "Composition API"]}
+            description="Spécialisé en Vue.js avec la Composition API, je développe des interfaces modernes et performantes. J'utilise principalement Nuxt.js pour mes projets, avec une expérience croissante sur Next.js et l'écosystème React."
+            technologies={["Vue.js", "Nuxt.js", "Next.js", "TypeScript", "Composition API"]}
           />
         </motion.div>
         <motion.div
@@ -46,8 +46,8 @@ export const SectionSkills = () => {
         >
           <Skills
             title="Back-end"
-            description="Pour le back-end, j'utilise des technologies comme Node.js associée à Express ou NestJS. J'utilise MySQL ou PostgreSQL pour la base de données."
-            technologies={["Node.js", "Express", "NestJS", "MySQL", "PostgreSQL"]}
+            description="Expérience en développement back-end avec Node.js, utilisant NestJS et Express pour créer des APIs RESTful. Familier avec la gestion de bases de données relationnelles MySQL et PostgreSQL."
+            technologies={["Node.js", "NestJS", "Express", "MySQL", "PostgreSQL", "REST API"]}
           />
         </motion.div>
         <motion.div
@@ -57,9 +57,9 @@ export const SectionSkills = () => {
           animate={isInView ? "visible" : "hidden"}
         >
           <Skills
-            title="Design"
-            description="Pour le design, j'adore utiliser TailwindCSS. Je peux évidemment aussi utiliser SASS au besoin. J'utilise aussi Figma pour les maquettes."
-            technologies={["TailwindCSS", "SASS", "Figma"]}
+            title="Outils & Design"
+            description="Maîtrise de TailwindCSS pour des interfaces modernes et responsives. Utilisation de Figma pour la conception et SASS pour des styles plus complexes. Expérience avec les outils de développement modernes."
+            technologies={["TailwindCSS", "SASS", "Figma", "Git", "Docker"]}
           />
         </motion.div>
       </div>
