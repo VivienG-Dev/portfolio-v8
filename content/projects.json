@@ -93,9 +93,9 @@
       "published": false,
       "featured": false,
       "title": "Groupomania",
-      "shortDescription": "Réseau social interne pour une société fictive "Groupomania"",
+      "shortDescription": "Réseau social interne pour une société fictive Groupomania",
       "fullDescription": [
-        "Groupomania est le projet 7 du parcours Développeur web d'OpenClassrooms. L'objectif était de créer un réseau social interne pour une société fictive "Groupomania" en suivant un cahier des charges et certaines recommandations.",
+        "Groupomania est le projet 7 du parcours Développeur web d'OpenClassrooms. L'objectif était de créer un réseau social interne pour une société fictive Groupomania en suivant un cahier des charges et certaines recommandations.",
         "Le back-end a été réalisé avec Node.js, Express et MySQL avec l'ORM Sequelize. Quand au front-end j'ai utilisé React. J'ai également utilisé Bootstrap pour faciliter la mise en forme."
       ],
       "technologies": [
@@ -115,7 +115,7 @@
       "shortDescription": "Site conçu sur le thème de la nourriture japonaise.",
       "fullDescription": [
         "Delicious Japan est un site conçu avec le trio HTML, CSS et JavaScript sur le thème de la nourriture japonaise.",
-        "Il est parfaitement responsive et dispose d'un "dark mode".",
+        "Il est parfaitement responsive et dispose d'un 'dark mode'.",
         "Le design original provient de Pixelgrade."
       ],
       "technologies": [
