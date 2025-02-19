@@ -27,6 +27,28 @@
       "projectUrl": "https://www.manga-hive.com/"
     },
     {
+      "id": "siamkitchen",
+      "published": true,
+      "featured": true,
+      "title": "Siam Kitchen",
+      "shortDescription": "Site vitrine moderne pour un restaurant thaïlandais avec gestion de contenu dynamique",
+      "fullDescription": [
+        "Siam Kitchen est une vitrine web professionnelle conçue pour offrir une expérience utilisateur optimale sur tous les appareils.",
+        "L'application frontend est développée avec Nuxt 3, exploitant le Server-Side Rendering (SSR) pour des performances optimales et le State-While-Revalidation (SWR) pour une gestion efficace du cache.",
+        "L'architecture suit rigoureusement les principes SOLID, avec une séparation claire des responsabilités entre composants, composables, services et stores.",
+        "Le backend utilise Strapi 5 comme CMS headless, offrant une interface d'administration intuitive pour la gestion des contenus et des utilisateurs."
+      ],
+      "technologies": [
+        "Nuxt 3",
+        "Tailwind 4",
+        "TypeScript",
+        "Strapi 5"
+      ],
+      "imageUrl": "/siam-kitchen.webp",
+      "githubUrl": "https://github.com/VivienG-Dev/siamkitchen",
+      "projectUrl": "https://www.siamkitchen.vivieng.com/"
+    },
+    {
       "id": "star-citizen-tool",
       "published": true,
       "featured": true,
@@ -66,27 +88,6 @@
       "imageUrl": "/online-resume.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/cv_webformat_vivieng",
       "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
-    },
-    {
-      "id": "siamkitchen",
-      "published": true,
-      "featured": true,
-      "title": "Siam Kitchen",
-      "shortDescription": "Site vitrine moderne pour un restaurant thaïlandais avec gestion de contenu dynamique",
-      "fullDescription": [
-        "Siam Kitchen est une vitrine web professionnelle conçue pour offrir une expérience utilisateur optimale sur tous les appareils.",
-        "L'application frontend est développée avec Nuxt 3, exploitant le Server-Side Rendering (SSR) pour des performances optimales et le State-While-Revalidation (SWR) pour une gestion efficace du cache.",
-        "L'architecture suit rigoureusement les principes SOLID, avec une séparation claire des responsabilités entre composants, composables, services et stores.",
-        "Le backend utilise Strapi 5 comme CMS headless, offrant une interface d'administration intuitive pour la gestion des contenus et des utilisateurs."
-      ],
-      "technologies": [
-        "Nuxt 3",
-        "Tailwind 4",
-        "TypeScript",
-        "Strapi 5"
-      ],
-      "imageUrl": "/siamkitchen.jpg",
-      "githubUrl": "https://github.com/VivienG-Dev/siamkitchen"
     },
     {
       "id": "groupomania",
