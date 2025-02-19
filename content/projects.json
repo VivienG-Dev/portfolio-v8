@@ -5,14 +5,12 @@
       "published": true,
       "featured": true,
       "title": "Manga Hive",
-      "shortDescription": "Découvrez des mangas, ajoutez-les à votre bibliothèque, notez-les et partagez votre bibliothèque avec vos amis !",
+      "shortDescription": "Une plateforme de gestion de bibliothèque manga permettant de découvrir, noter et partager vos lectures avec la communauté",
       "fullDescription": [
-        "Manga Hive est un site web permettant de découvrir des mangas, ajouter des mangas à votre bibliothèque, les noter et partager votre bibliothèque avec vos amis.",
-        "Pour ce projet fullstack, j’ai utilisé NestJS, MySQL en backend, ainsi que Vue.js et Tailwind CSS en frontend.",
-        "J’ai volontairement utilisé un minimum de librairies, quitte à réinventer la roue (validation from scratch dans le front par exemple) juste pour le plaisir de pratiquer et de me mettre en difficulté pour apprendre plus et me remettre au backend.",
-        "J'ai utilisé plusieurs librairies pour le front, comme shadcn/ui pour les composants (certains sont personnalisés), Vee-validate pour la validation des formulaires, Zod pour la validation des données, Pinia pour la gestion des données, et plusieurs autres.",
-        "Pour le back, j'ai utilisé NestJS, MySQL, Prisma et JWT pour la gestion des utilisateurs. Mais encore Passport pour l'authentification local et Google pour l'authentification OAuth.",
-        "Le projet est actuellement en version 1.0.0. Il est disponible via mon hébergeur O2switch et completement fonctionnel."
+        "Manga Hive est une plateforme complète de gestion de bibliothèque manga développée avec une architecture fullstack moderne.",
+        "Le backend est construit avec NestJS et utilise une base de données MySQL avec Prisma comme ORM. L'authentification est gérée via JWT avec support pour connexion locale et OAuth Google via Passport.",
+        "Le frontend utilise Vue.js avec une interface utilisateur élégante construite sur Tailwind CSS. L'architecture inclut des composants personnalisés basés sur shadcn/ui, une validation de formulaires robuste avec Vee-validate et Zod, ainsi qu'une gestion d'état centralisée avec Pinia.",
+        "Le projet est actuellement en production (v1.0.0) et hébergé sur O2switch avec toutes les fonctionnalités principales opérationnelles."
       ],
       "technologies": [
         "NestJS",
@@ -33,12 +31,12 @@
       "published": true,
       "featured": true,
       "title": "Star Citizen Tool",
-      "shortDescription": "Consultez la liste des vaisseaux du jeu Star Citizen.",
+      "shortDescription": "Un catalogue interactif des vaisseaux de Star Citizen avec visualisation détaillée des caractéristiques",
       "fullDescription": [
-        "Projet réalisé avec Nuxt 3, Tailwind CSS et TypeScript permettant de consulter les caractéristiques des vaisseaux du jeu Star Citizen.",
-        "J’ai utilisé l’API REST “StarCitizen-API” pour récupérer les données des vaisseaux du jeu. Ce choix était motivé par le besoin de pratiquer l’implémentation d’une API externe dans un projet Nuxt. Ensuite, j’ai utilisé “Tailwind CSS” pour le design du site ainsi que “TypeScript” pour le typage des données.",
-        "J’ai dû créer mon propre système de pagination côté front-end car l’API ne permettait pas de récupérer les données de cette manière. Cela a entraîné un temps de chargement relativement long puisque toutes les données doivent être récupérées en une seule fois.",
-        "Il manque encore quelques fonctionnalités, comme le filtrage par catégorie. Cependant, l’API présente de grandes lacunes qui ne permettent pas de réaliser cela “facilement”. Je devrais donc le faire côté front-end une fois de plus. Malgré cela, le projet est fonctionnel et m’a permis de pratiquer avec Nuxt 3 et Tailwind CSS."
+        "Une application web moderne développée avec Nuxt 3, TypeScript et Tailwind CSS, offrant une interface intuitive pour explorer les vaisseaux de Star Citizen.",
+        "L'application intègre l'API REST StarCitizen-API pour la récupération des données. Ce projet m'a permis d'approfondir l'intégration d'APIs externes dans l'écosystème Nuxt.",
+        "J'ai implémenté un système de pagination côté client personnalisé pour gérer efficacement l'affichage des données, bien que cela implique un chargement initial plus conséquent dû aux limitations de l'API.",
+        "Le projet est entièrement fonctionnel mais évolutif, avec des améliorations prévues comme l'ajout de filtres par catégorie. Les contraintes de l'API m'ont poussé à développer des solutions créatives côté client."
       ],
       "technologies": [
         "Nuxt",
@@ -58,7 +56,7 @@
       "title": "Online Resume",
       "shortDescription": "Mon cv en format web",
       "fullDescription": [
-        "Online Resume est un petit test technique que j’ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
+        "Online Resume est un petit test technique que j'ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
       ],
       "technologies": [
         "HTML5",
@@ -70,14 +68,35 @@
       "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
     },
     {
-      "id": "groupomania",
+      "id": "siamkitchen",
       "published": true,
+      "featured": true,
+      "title": "Siam Kitchen",
+      "shortDescription": "Site vitrine moderne pour un restaurant thaïlandais avec gestion de contenu dynamique",
+      "fullDescription": [
+        "Siam Kitchen est une vitrine web professionnelle conçue pour offrir une expérience utilisateur optimale sur tous les appareils.",
+        "L'application frontend est développée avec Nuxt 3, exploitant le Server-Side Rendering (SSR) pour des performances optimales et le State-While-Revalidation (SWR) pour une gestion efficace du cache.",
+        "L'architecture suit rigoureusement les principes SOLID, avec une séparation claire des responsabilités entre composants, composables, services et stores.",
+        "Le backend utilise Strapi 5 comme CMS headless, offrant une interface d'administration intuitive pour la gestion des contenus et des utilisateurs."
+      ],
+      "technologies": [
+        "Nuxt 3",
+        "Tailwind 4",
+        "TypeScript",
+        "Strapi 5"
+      ],
+      "imageUrl": "/siamkitchen.jpg",
+      "githubUrl": "https://github.com/VivienG-Dev/siamkitchen"
+    },
+    {
+      "id": "groupomania",
+      "published": false,
       "featured": false,
       "title": "Groupomania",
-      "shortDescription": "Mon cv en format web",
+      "shortDescription": "Réseau social interne pour une société fictive "Groupomania"",
       "fullDescription": [
-        "Groupomania est le projet 7 du parcours Développeur web d’OpenClassrooms. L’objectif était de créer un réseau social interne pour une société fictive “Groupomania” en suivant un cahier des charges et certaines recommandations.",
-        "Le back-end a été réalisé avec Node.js, Express et MySQL avec l’ORM Sequelize. Quand au front-end j’ai utilisé React. J’ai également utilisé Bootstrap pour faciliter la mise en forme."
+        "Groupomania est le projet 7 du parcours Développeur web d'OpenClassrooms. L'objectif était de créer un réseau social interne pour une société fictive "Groupomania" en suivant un cahier des charges et certaines recommandations.",
+        "Le back-end a été réalisé avec Node.js, Express et MySQL avec l'ORM Sequelize. Quand au front-end j'ai utilisé React. J'ai également utilisé Bootstrap pour faciliter la mise en forme."
       ],
       "technologies": [
         "React",
@@ -91,12 +110,12 @@
     {
       "id": "delicious-japan",
       "published": true,
-      "featured": true,
+      "featured": false,
       "title": "Delicious Japan",
       "shortDescription": "Site conçu sur le thème de la nourriture japonaise.",
       "fullDescription": [
         "Delicious Japan est un site conçu avec le trio HTML, CSS et JavaScript sur le thème de la nourriture japonaise.",
-        "Il est parfaitement responsive et dispose d’un “dark mode”.",
+        "Il est parfaitement responsive et dispose d'un "dark mode".",
         "Le design original provient de Pixelgrade."
       ],
       "technologies": [
@@ -116,7 +135,7 @@
       "title": "Picture Perfect",
       "shortDescription": "Site réalisé à partir du PSD de Blaz Robar.",
       "fullDescription": [
-        "Cet exercise m’a permis d’apprendre à mieux gérer la création d’un site à partir d’un PSD. J’ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
+        "Cet exercise m'a permis d'apprendre à mieux gérer la création d'un site à partir d'un PSD. J'ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
       ],
       "technologies": [
         "HTML5",
@@ -133,9 +152,9 @@
       "published": true,
       "featured": false,
       "title": "TSL Language School",
-      "shortDescription": "Rénovation du site web d’une école Thaïlandaise",
+      "shortDescription": "Rénovation du site web d'une école Thaïlandaise",
       "fullDescription": [
-        "Rénovation du site web de l’école Thaïlandaise dans laquelle j’ai étudié un certain temps.",
+        "Rénovation du site web de l'école Thaïlandaise dans laquelle j'ai étudié un certain temps.",
         "Le site officiel est toujours disponible. Malheureusement, l'école a changé."
       ],
       "technologies": [
