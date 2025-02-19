@@ -53,12 +53,16 @@ export const Hero = () => {
             className="text-center lg:text-left text-lg lg:text-1xl mb-4 text-gray-600"
             variants={itemVariants}
           >
-            Développeur Web Full Stack
+            Développeur Front-end & Full Stack JavaScript
           </motion.h3>
           <motion.p className="mb-6 text-gray-700 text-justify" variants={itemVariants}>
-            Développeur Web Full Stack passionné par la création d&#39;applications web innovantes de A à Z. Expertise
-            en Vue 3, Nuxt, développement d&#39;APIs, et autres technologies modernes. Capable de transformer des
-            concepts en solutions fonctionnelles et intuitives.
+            Spécialisé dans le développement d'interfaces web modernes avec Vue.js et Nuxt,
+            je m'investis également dans le développement full stack. Passionné par la création
+            d'applications web performantes, je mets l'accent sur la qualité du code et
+            l'expérience utilisateur.
+          </motion.p>
+          <motion.p className="mb-6 text-gray-700 text-justify" variants={itemVariants}>Toujours en quête d'apprentissage, je développe
+            activement mes compétences back-end et front-end pour offrir des solutions complètes.
           </motion.p>
           <motion.div className="text-center lg:text-left" variants={itemVariants}>
             <Button className="gap-2 inline-flex" asChild>
