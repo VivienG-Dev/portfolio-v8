@@ -55,14 +55,25 @@ export const Hero = () => {
           >
             Développeur Front-end & Full Stack JavaScript
           </motion.h3>
-          <motion.p className="mb-6 text-gray-700 text-justify" variants={itemVariants}>
+          <motion.p className="mb-4 text-gray-700 text-justify" variants={itemVariants}>
             Spécialisé dans le développement d&apos;interfaces web modernes avec Vue.js et Nuxt,
-            je m&apos;investis également dans le développement full stack. Passionné par la création
-            d&apos;applications web performantes, je mets l&apos;accent sur la qualité du code et
-            l&apos;expérience utilisateur.
+            je m&apos;investis également dans le développement full stack.
+            <span className="hidden md:inline">
+              {" "}Passionné par la création d&apos;applications web performantes,
+              je mets l&apos;accent sur la qualité du code et l&apos;expérience utilisateur.
+            </span>
           </motion.p>
-          <motion.p className="mb-6 text-gray-700 text-justify" variants={itemVariants}>Toujours en quête d&apos;apprentissage, je développe
-            activement mes compétences back-end et front-end pour offrir des solutions complètes.
+          <motion.p className="mb-4 text-gray-700 text-justify md:hidden" variants={itemVariants}>
+            Passionné par la création d&apos;applications web performantes.
+          </motion.p>
+          <motion.p className="mb-4 text-gray-700 text-justify" variants={itemVariants}>
+            <span className="md:hidden">
+              Je développe mes compétences pour offrir des solutions complètes.
+            </span>
+            <span className="hidden md:inline">
+              Toujours en quête d&apos;apprentissage, je développe
+              activement mes compétences back-end et front-end pour offrir des solutions complètes.
+            </span>
           </motion.p>
           <motion.div className="text-center lg:text-left" variants={itemVariants}>
             <Button className="gap-2 inline-flex" asChild>
