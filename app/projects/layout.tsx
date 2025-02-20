@@ -1,13 +1,17 @@
-import { Metadata } from "next";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Mes side projects | VivienG",
-  description: "Liste de tous mes side projects !",
+  title: "Projets | VivienG - Développeur Front-end & Full Stack",
+  description:
+    "Découvrez mon portfolio de projets web développés avec Vue.js, Nuxt, et Next.js. \
+    Applications full stack modernes et sites vitrines performants.",
   keywords: ["web development", "portfolio", "projects", "frontend", "backend", "fullstack"],
   authors: [{ name: "VivienG" }],
   openGraph: {
-    title: "Mes side projects | VivienG",
-    description: "Liste de tous mes side projects !",
+    title: "Projets | VivienG - Développeur Front-end & Full Stack",
+    description:
+      "Découvrez mon portfolio de projets web développés avec Vue.js, Nuxt, et Next.js. \
+      Applications full stack modernes et sites vitrines performants.",
     url: "https://www.vivieng.com",
     siteName: "Développeur web | VivienG",
     images: [
@@ -23,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mes side projects | VivienG",
-    description: "Liste de tous mes side projects !",
+    title: "Projets | VivienG - Développeur Front-end & Full Stack",
+    description: "Découvrez mon portfolio de projets web développés avec Vue.js, Nuxt, et Next.js. Applications full stack modernes et sites vitrines performants.",
     images: ["https://www.vivieng.com/vivieng-meta-image.jpg"],
   },
   robots: {
@@ -40,6 +44,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function ProjectsLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return <>{children}</>;
 }

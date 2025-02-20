@@ -11,23 +11,36 @@ import { Spacing } from "@/components/spacing";
 const anekTelugu = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
 export const metadata: Metadata = {
-  title: "Développeur web | VivienG",
+  title: "VivienG | Développeur Front-end & Full Stack JavaScript",
   description:
-    "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
-  keywords: ["web development", "portfolio", "projects", "frontend", "backend", "fullstack"],
-  authors: [{ name: "VivienG" }],
+    "Développeur spécialisé en Vue.js/Nuxt avec expertise en développement d'applications web modernes. \
+    Création d'interfaces performantes et solutions full stack sur mesure.",
+  keywords: [
+    "développeur front-end",
+    "Vue.js",
+    "Nuxt",
+    "JavaScript",
+    "TypeScript",
+    "développement web",
+    "full stack",
+    "applications web",
+    "interfaces utilisateur",
+    "développeur web France"
+  ],
+  authors: [{ name: "Vivien Grenier" }],
   openGraph: {
-    title: "Développeur web | VivienG",
+    title: "VivienG | Développeur Front-end & Full Stack JavaScript",
     description:
-      "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
+      "Développeur spécialisé en Vue.js/Nuxt avec expertise en développement d'applications web modernes. \
+      Création d'interfaces performantes et solutions full stack sur mesure.",
     url: "https://www.vivieng.com",
-    siteName: "Développeur web | VivienG",
+    siteName: "Portfolio VivienG - Développeur Web",
     images: [
       {
         url: "https://www.vivieng.com/vivieng-meta-image.jpg",
         width: 1200,
         height: 630,
-        alt: "VivienG Portfolio Preview",
+        alt: "Portfolio VivienG - Développeur Front-end & Full Stack",
       },
     ],
     locale: "fr_FR",
@@ -35,9 +48,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Développeur web | VivienG",
+    title: "VivienG | Développeur Front-end & Full Stack JavaScript",
     description:
-      "Développeur web freelance pouvant créer votre site internet et vous apporter de la visibilité sur internet.",
+      "Développeur spécialisé en Vue.js/Nuxt avec expertise en développement d'applications web modernes. \
+      Création d'interfaces performantes et solutions full stack sur mesure.",
     images: ["https://www.vivieng.com/vivieng-meta-image.jpg"],
   },
   robots: {

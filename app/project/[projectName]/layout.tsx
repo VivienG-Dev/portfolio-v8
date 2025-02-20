@@ -1,61 +1,48 @@
-import { Metadata } from "next";
-import { getProjectById } from "@/lib/projects";
+import type { Metadata } from "next";
+import { projects } from "@/content/projects.json";
 
-export async function generateMetadata({ params }: { params: { projectName: string } }): Promise<Metadata> {
-  const project = getProjectById(params.projectName);
+type Props = {
+  params: { projectName: string }
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const project = projects.find(p => p.id === params.projectName);
 
   if (!project) {
     return {
-      title: "Side project not found",
-      description: "Side project not found",
+      title: "Projet non trouvé | VivienG",
+      description: "Le projet demandé n'existe pas."
     };
   }
 
-  const title = `${project.title} | VivienG`;
-  const description = project.shortDescription;
-  const url = `https://www.vivieng.com/project/${params.projectName}`;
-  const keywords = project.technologies;
-
   return {
-    title,
-    description,
-    keywords: keywords,
+    title: `${project.title} | Projet VivienG`,
+    description: project.shortDescription,
     openGraph: {
-      title,
-      description,
-      url,
-      siteName: "Développeur web | VivienG",
+      title: `${project.title} | Projet VivienG - Développeur Front-end & Full Stack`,
+      description: project.shortDescription,
       images: [
         {
           url: `https://www.vivieng.com${project.imageUrl}`,
           width: 1200,
           height: 630,
-          alt: `${project.title} Preview`,
+          alt: `Aperçu du projet ${project.title}`,
         },
       ],
-      locale: "fr_FR",
-      type: "article",
     },
     twitter: {
       card: "summary_large_image",
-      title,
-      description,
+      title: `${project.title} | Projet VivienG`,
+      description: project.shortDescription,
       images: [`https://www.vivieng.com${project.imageUrl}`],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        "max-video-preview": -1,
-        "max-image-preview": "large",
-        "max-snippet": -1,
-      },
     },
   };
 }
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function ProjectLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return <>{children}</>;
 }
