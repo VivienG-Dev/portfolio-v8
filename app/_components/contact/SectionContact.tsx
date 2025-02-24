@@ -36,9 +36,9 @@ export const Contact = () => {
           className="flex-1 w-full"
         >
           <ContactCard
-            title="grenier.vivien@proton.com"
+            title="vivien.grenier@protonmail.com"
             description="Me contacter par mail."
-            url="mailto:grenier.vivien@proton.com"
+            url="mailto:vivien.grenier@protonmail.com"
             Icon={AtSign}
           />
         </motion.div>
