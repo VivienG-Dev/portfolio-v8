@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from 'next/script'
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
 import { GeistSans } from "geist/font/sans";
@@ -79,6 +80,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="h-full">
+      <Script
+        defer
+        src="https://um-dash.jap-idols.com/script.js"
+        data-website-id="10d3ac21-db99-4d6b-8cfc-a321de8e8fbf"
+      />
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${anekTelugu.variable} font-sans antialiased h-full bg-background text-foreground`}
       >
