@@ -44,7 +44,7 @@ export const Hero = () => {
           animate={isInView ? "visible" : "hidden"}
         >
           <motion.h2
-            className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-2 text-customGold"
+            className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-2 text-customGold flex justify-center lg:justify-start"
             variants={itemVariants}
           >
             <Image
