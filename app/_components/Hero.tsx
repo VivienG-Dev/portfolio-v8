@@ -47,7 +47,14 @@ export const Hero = () => {
             className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-2 text-customGold"
             variants={itemVariants}
           >
-            VIVIENG
+            <Image
+              src="/vivieng-logo.svg"
+              alt="VivienG Logo"
+              width={0}
+              height={0}
+              style={{ width: "auto", height: "48px" }}
+              priority
+            />
           </motion.h2>
           <motion.h3
             className="text-center lg:text-left text-lg lg:text-1xl mb-4 text-gray-600"

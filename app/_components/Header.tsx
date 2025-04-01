@@ -4,13 +4,22 @@ import { Button } from "@/components/ui/button";
 import { GithubIcon } from "./icons/GithubIcon";
 import { LinkedInIcon } from "./icons/LinkedInIcon";
 import { ModeToggle } from "@/components/mode-toggle";
-
+import Image from "next/image";
 export const Header = () => {
   return (
     <header className="sticky top-0 bg-white dark:bg-background py-4 z-50">
-      <Section className="flex items-baseline justify-between">
+      <Section className="flex items-center justify-between">
         <h1 className="text-lg font-bold font text-customGold">
-          <Link href="/">VIVIENG.COM</Link>
+          <Link href="/">
+            <Image
+              src="/vivieng-logo.svg"
+              alt="VivienG Logo"
+              width={0}
+              height={0}
+              style={{ width: "auto", height: "44px" }}
+              priority
+            />
+          </Link>
         </h1>
         <div className="flex-1">
           <nav className="flex-1 flex justify-end">
