@@ -34,8 +34,8 @@ export const SectionSkills = () => {
         >
           <Skills
             title="Front-end"
-            description="Spécialisé en Vue.js avec la Composition API, je développe des interfaces modernes et performantes. J'utilise principalement Nuxt.js pour mes projets, avec une expérience croissante sur Next.js et l'écosystème React."
-            technologies={["Vue.js", "Nuxt.js", "Next.js", "TypeScript", "Composition API"]}
+            description="Spécialisé en Vue.js et la Composition API, je conçois des interfaces modernes et performantes. J’utilise principalement Nuxt.js pour mes projets personnels, tout en travaillant actuellement avec Angular et en développant progressivement mon expérience sur Next.js et l’écosystème React."
+            technologies={["Vue.js", "Nuxt.js", "Angular", "Next.js", "TypeScript", "Composition API"]}
           />
         </motion.div>
         <motion.div
