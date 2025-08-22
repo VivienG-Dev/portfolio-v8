@@ -7,6 +7,7 @@ import { File } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
+import { AvailabilityStatus } from "./AvailabilityStatus";
 
 export const Hero = () => {
   const ref = useRef(null);
@@ -43,25 +44,18 @@ export const Hero = () => {
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
         >
-          <motion.h2
-            className="text-center lg:text-left text-4xl lg:text-5xl font-bold mb-2 text-customGold flex justify-center lg:justify-start"
+          <motion.div
+            className="flex justify-center lg:justify-start mb-4"
             variants={itemVariants}
           >
-            <Image
-              src="/vivieng-logo.svg"
-              alt="VivienG Logo"
-              width={0}
-              height={0}
-              style={{ width: "auto", height: "48px" }}
-              priority
-            />
-          </motion.h2>
-          <motion.h3
+            <AvailabilityStatus status="busy" />
+          </motion.div>
+          <motion.h2
             className="text-center lg:text-left text-lg lg:text-1xl mb-4 text-gray-600"
             variants={itemVariants}
           >
             Développeur Front-end & Full Stack JavaScript
-          </motion.h3>
+          </motion.h2>
           <motion.p className="mb-4 text-gray-700 text-justify" variants={itemVariants}>
             Spécialisé dans le développement d&apos;interfaces web modernes avec Vue.js et Nuxt,
             je m&apos;investis également dans le développement full stack.
