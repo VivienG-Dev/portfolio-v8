@@ -5,22 +5,29 @@
       "published": true,
       "featured": true,
       "title": "Manga Hive",
-      "shortDescription": "Une plateforme de gestion de bibliothèque manga permettant de découvrir, noter et partager vos lectures avec la communauté",
+      "shortDescription": "Une plateforme complète de gestion et découverte de manga avec suivi de progression, système de badges et partage communautaire",
       "fullDescription": [
         "Manga Hive est une plateforme complète de gestion de bibliothèque manga développée avec une architecture fullstack moderne.",
-        "Le backend est construit avec NestJS et utilise une base de données MySQL avec Prisma comme ORM. L'authentification est gérée via JWT avec support pour connexion locale et OAuth Google via Passport.",
-        "Le frontend utilise Vue.js avec une interface utilisateur élégante construite sur Tailwind CSS. L'architecture inclut des composants personnalisés basés sur shadcn/ui, une validation de formulaires robuste avec Vee-validate et Zod, ainsi qu'une gestion d'état centralisée avec Pinia.",
-        "Le projet est actuellement en production (v1.0.0) et hébergé sur O2switch avec toutes les fonctionnalités principales opérationnelles."
+        "Le backend est construit avec NestJS et utilise une base de données PostgreSQL avec Prisma comme ORM. L'authentification est gérée via JWT avec support pour connexion locale et OAuth Google via Passport. Le système inclut du caching Redis et le traitement d'images avec Sharp.",
+        "Le frontend utilise Nuxt 3 avec une interface utilisateur élégante construite sur Tailwind CSS. L'architecture inclut des composants personnalisés basés sur shadcn/vue, une validation de formulaires robuste avec Vee-validate et Zod, ainsi qu'une gestion d'état centralisée avec Pinia.",
+        "Les fonctionnalités principales incluent le suivi de progression de lecture (volumes), un système de badges, la notation et favoris, ainsi que des optimisations SEO et performances avancées.",
+        "Le projet est actuellement en preview (v2.0.0) et hébergé sur chez Hostinger sur mon VPS avec toutes les fonctionnalités principales opérationnelles.",
+        "Le projet intègre un pipeline CI/CD avec environnement de prévisualisation automatique pour un développement et déploiement sécurisés."
       ],
       "technologies": [
         "NestJS",
-        "MySQL",
+        "PostgreSQL",
         "Prisma",
-        "JWT",
+        "TypeScript",
+        "JWT (HTTP Only Cookie)",
         "Passport",
         "Google OAuth",
-        "Vue.js",
-        "TailwindCSS"
+        "Redis",
+        "Sharp",
+        "Nuxt 3",
+        "TailwindCSS",
+        "shadcn/vue",
+        "Pinia"
       ],
       "imageUrl": "/manga-hive.jpg",
       "githubUrl": "",
@@ -38,12 +45,7 @@
         "L'architecture suit rigoureusement les principes SOLID, avec une séparation claire des responsabilités entre composants, composables, services et stores.",
         "Le backend utilise Strapi 5 comme CMS headless, offrant une interface d'administration intuitive pour la gestion des contenus et des utilisateurs."
       ],
-      "technologies": [
-        "Nuxt 3",
-        "Tailwind 4",
-        "TypeScript",
-        "Strapi 5"
-      ],
+      "technologies": ["Nuxt 3", "Tailwind 4", "TypeScript", "Strapi 5"],
       "imageUrl": "/siam-kitchen.webp",
       "githubUrl": "https://github.com/VivienG-Dev/siamkitchen",
       "projectUrl": "https://www.siamkitchen.vivieng.com/"
@@ -80,11 +82,7 @@
       "fullDescription": [
         "Online Resume est un petit test technique que j'ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
       ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript"
-      ],
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
       "imageUrl": "/online-resume.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/cv_webformat_vivieng",
       "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
@@ -99,18 +97,13 @@
         "Groupomania est le projet 7 du parcours Développeur web d'OpenClassrooms. L'objectif était de créer un réseau social interne pour une société fictive Groupomania en suivant un cahier des charges et certaines recommandations.",
         "Le back-end a été réalisé avec Node.js, Express et MySQL avec l'ORM Sequelize. Quand au front-end j'ai utilisé React. J'ai également utilisé Bootstrap pour faciliter la mise en forme."
       ],
-      "technologies": [
-        "React",
-        "Bootstrap",
-        "Node.js",
-        "MySQL"
-      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
       "imageUrl": "/groupomania.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/VivienGrenier_7_14022022"
     },
     {
       "id": "delicious-japan",
-      "published": true,
+      "published": false,
       "featured": false,
       "title": "Delicious Japan",
       "shortDescription": "Site conçu sur le thème de la nourriture japonaise.",
@@ -119,38 +112,28 @@
         "Il est parfaitement responsive et dispose d'un 'dark mode'.",
         "Le design original provient de Pixelgrade."
       ],
-      "technologies": [
-        "React",
-        "Bootstrap",
-        "Node.js",
-        "MySQL"
-      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
       "imageUrl": "/delicious-japan.jpg",
       "projectUrl": "https://www.deliciousjapan.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/1560982-Rosa-Restaurant-Website"
     },
     {
       "id": "picture-perfect",
-      "published": true,
+      "published": false,
       "featured": false,
       "title": "Picture Perfect",
       "shortDescription": "Site réalisé à partir du PSD de Blaz Robar.",
       "fullDescription": [
         "Cet exercise m'a permis d'apprendre à mieux gérer la création d'un site à partir d'un PSD. J'ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
       ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "Bootstrap 4",
-        "SASS"
-      ],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
       "imageUrl": "/picture-perfect.jpg",
       "projectUrl": "https://www.pictureperfect.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/2493496-Free-PSD-One-Page-Mobile-App"
     },
     {
       "id": "tsl-language-school",
-      "published": true,
+      "published": false,
       "featured": false,
       "title": "TSL Language School",
       "shortDescription": "Rénovation du site web d'une école Thaïlandaise",
@@ -158,12 +141,7 @@
         "Rénovation du site web de l'école Thaïlandaise dans laquelle j'ai étudié un certain temps.",
         "Le site officiel est toujours disponible. Malheureusement, l'école a changé."
       ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "Bootstrap 4",
-        "SASS"
-      ],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
       "imageUrl": "/tsl-language-school.jpg",
       "projectUrl": "https://www.languageschool.vivieng.com/",
       "originalUrl": "https://tlslanguageschool.com/"
