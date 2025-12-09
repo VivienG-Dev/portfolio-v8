@@ -82,8 +82,8 @@ export default function RootLayout({
     <html lang="fr" className="h-full">
       <Script
         defer
-        src="https://um-dash.jap-idols.com/script.js"
-        data-website-id="10d3ac21-db99-4d6b-8cfc-a321de8e8fbf"
+        src="https://umami-e0gc00g8ooks40g40o800cws.jap-idols.com/script.js"
+        data-website-id="c25f64c2-cb07-4858-a8e3-a60943f1ef14"
       />
       <body
         className={`${GeistSans.variable} ${GeistMono.variable} ${anekTelugu.variable} font-sans antialiased h-full bg-background text-foreground`}
