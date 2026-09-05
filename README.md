@@ -47,6 +47,32 @@ Make sure you have the following installed:
 
 ## Project Structure
 
+### French and English versions
+
+French keeps the existing URLs (`/`, `/projects`, `/project/manga-hive`). English
+uses `/en`, `/en/projects` and `/en/project/manga-hive`. The language switcher keeps
+the current page and section. Language is selected explicitly, without browser
+language redirects.
+
+Translations are stored in `content/locales/fr.json` and `content/locales/en.json`.
+French project content stays in `content/projects.json`; English project copy is
+in `content/locales/projects.en.json`, keyed by the same project IDs. Every
+published project must have an English translation. The CV is currently French
+and is labelled **CV (French)** on English pages.
+
+`lib/i18n.ts` contains the locale and URL helpers. The `(fr)` and `(en)` route
+groups share their page components and render the correct HTML language directly
+in the static export. SEO copy lives in `lib/seo.ts`, with canonical URLs,
+reciprocal language alternates and a bilingual sitemap.
+
+Run `npm run brand:generate` to regenerate both social preview images after
+editing `scripts/generate-brand-assets.mjs`. Run `npm run build`, then
+`npm run test:i18n` to verify the exported pages, translations, language links and
+SEO metadata. This setup uses the existing Next.js static export and does not
+require an additional translation dependency.
+
+### Directories
+
 - `app/`: Main application directory.
 - `components/`: Reusable UI components.
 - `content/`: Static content for the site.

@@ -23,7 +23,7 @@ await writeFile(new URL('public/vivieng-logo-dark.svg', root), darkLogo);
 await writeFile(new URL('public/vivieng-mark.svg', root), monogram);
 
 const box = (style, ...children) => h('div', { style: { display: 'flex', ...style } }, ...children);
-const card = box({ width: '100%', height: '100%', background: paper, color: ink, fontFamily: 'Geist', position: 'relative', flexDirection: 'column', padding: '52px 64px' },
+const card = (locale) => box({ width: '100%', height: '100%', background: paper, color: ink, fontFamily: 'Geist', position: 'relative', flexDirection: 'column', padding: '52px 64px' },
   h('img', { src: dataUri(logo), width: 245, height: 64 }),
   box({ position: 'absolute', top: 62, right: 64, fontSize: 15, letterSpacing: '3px', color: '#6b6b6b' }, 'PORTFOLIO'),
   box({ position: 'absolute', right: 56, top: 188, opacity: 0.07 }, h('img', { src: dataUri(monogram), width: 340, height: 286 })),
@@ -34,8 +34,8 @@ const card = box({ width: '100%', height: '100%', background: paper, color: ink,
       box({ fontSize: 70, lineHeight: 1.1, fontWeight: 600, letterSpacing: '-3px' }, 'Vivien Grenier'),
     ),
     box({ marginTop: 26, paddingLeft: 27, flexDirection: 'column', fontSize: 40, lineHeight: 1.25, letterSpacing: '-1px', fontWeight: 500 },
-      'Développeur full stack',
-      h('span', { style: { color: '#a17c3e' } }, 'JavaScript.'),
+      locale === 'en' ? 'Full-stack' : 'Développeur full stack',
+      h('span', { style: { color: '#a17c3e' } }, locale === 'en' ? 'JavaScript developer.' : 'JavaScript.'),
     ),
   ),
   box({ position: 'absolute', bottom: 50, left: 64, right: 64, borderTop: '1px solid #dedbd5', paddingTop: 24, alignItems: 'center', justifyContent: 'space-between' },
@@ -43,8 +43,11 @@ const card = box({ width: '100%', height: '100%', background: paper, color: ink,
     box({ fontSize: 20, fontWeight: 500 }, 'vivieng.com', h('span', { style: { color: gold, marginLeft: 13 } }, '↗')),
   ),
 );
-const response = new ImageResponse(card, { width: 1200, height: 630, fonts });
-await writeFile(new URL('public/vivieng-meta-image.png', root), Buffer.from(await response.arrayBuffer()));
+for (const locale of ['fr', 'en']) {
+  const response = new ImageResponse(card(locale), { width: 1200, height: 630, fonts });
+  const filename = locale === 'en' ? 'vivieng-meta-image-en.png' : 'vivieng-meta-image.png';
+  await writeFile(new URL(`public/${filename}`, root), Buffer.from(await response.arrayBuffer()));
+}
 
 // ICO containing a PNG entry, supported by modern browsers and generated from the same mark.
 const icon = new ImageResponse(box({ width: '100%', height: '100%', background: paper, alignItems: 'center', justifyContent: 'center', borderRadius: 24 }, h('img', { src: dataUri(monogram), width: 104, height: 88 })), { width: 128, height: 128 });

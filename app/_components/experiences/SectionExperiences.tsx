@@ -1,4 +1,6 @@
 "use client";
+import { dictionaries, type LocaleProps } from "@/lib/i18n";
+
 
 import React, { useRef } from "react";
 import { Section } from "../Section";
@@ -19,25 +21,18 @@ const createVariants = (delay = 0) => ({
   },
 });
 
-export const SectionExperiences = () => {
+export const SectionExperiences = ({ locale = "fr" }: LocaleProps) => {
+  const t = dictionaries[locale];
   const reduceMotion = useReducedMotion();
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
   
-  const neuralixDescriptionPoints = [
-    "Développement d’applications médicales avec Angular, NestJS et PostgreSQL.",
-    "Centralisation des règles métier côté serveur et tests automatisés des fonctionnalités critiques.",
-    "Participation aux choix d’architecture et à la définition des spécifications avec l’équipe.",
-  ];
-  const spinforeatDescriptionPoints = [
-    "Création de deux applications Vue 3 : fidélité par QR code, suivi des points et récompenses.",
-    "Développement d’un site vitrine Nuxt pour un restaurant, avec un travail sur l’accessibilité et le SEO.",
-    "Intégration de l’API interne en collaboration avec l’équipe back-end.",
-  ];
+  const neuralixDescriptionPoints = t.neuralixPoints;
+  const spinforeatDescriptionPoints = t.spinforeatPoints;
 
   return (
-    <Section id="parcours" className="flex flex-col gap-4" title="Expériences" rotate="rotate-90" position="-left-20">
-      <Title title="Expériences" />
+    <Section id="parcours" className="flex flex-col gap-4" title={t.experience} rotate="rotate-90" position="-left-20">
+      <Title title={t.experience} />
       <div ref={containerRef} className="flex flex-col md:flex-row gap-4">
         <motion.div
           variants={createVariants(0.1)}
@@ -51,9 +46,9 @@ export const SectionExperiences = () => {
                 imageSrc="/neuralix.svg"
                 title="Neuralix"
                 descriptionPoints={neuralixDescriptionPoints}
-                startingDate="Avril 2025"
-                endingDate="Actuellement en poste"
-                role="Développeur Full Stack"
+                startingDate={t.neuralixStart}
+                endingDate={t.busy}
+                role={t.fullStackRole}
               />
             </div>
           </Card>
@@ -70,9 +65,9 @@ export const SectionExperiences = () => {
                 imageSrc="/spinforeat.svg"
                 title="SpinforEat"
                 descriptionPoints={spinforeatDescriptionPoints}
-                startingDate="Août 2022"
-                endingDate="Décembre 2023"
-                role="Développeur front-end"
+                startingDate={t.spinStart}
+                endingDate={t.spinEnd}
+                role={t.frontendRole}
               />
             </div>
           </Card>

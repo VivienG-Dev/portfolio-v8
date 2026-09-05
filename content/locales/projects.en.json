@@ -1,0 +1,41 @@
+{
+  "manga-hive": {
+    "shortDescription": "An independent, free and ad-free platform to manage your manga collection, track your reading and discover upcoming French releases.",
+    "fullDescription": [
+      "Manga Hive brings manga discovery, collection tracking and sharing together on the web, with a companion mobile app in closed beta.",
+      "The back end uses NestJS, PostgreSQL and Prisma for authentication, library synchronisation, social profiles, notifications and the catalogue. Redis and BullMQ handle caching and background jobs. Images are optimised with Sharp and stored on Cloudflare R2.",
+      "The web app is built with Nuxt 4, Vue 3, Tailwind CSS and Pinia, with attention to accessibility, search visibility, light and dark themes, and performance.",
+      "The React Native and Expo mobile app includes a synchronised library with offline access, notifications and a release calendar.",
+      "Readers can track volumes and reading progress, manage favourites and wishlists, browse French releases and interact through reviews, comments and social profiles.",
+      "The web platform is running in production, hosted on a VPS and managed with Coolify, with separate preview and production environments. The mobile app is in closed beta."
+    ],
+    "caseStudy": [
+      {"heading": "The need", "body": "Manga Hive started with a question from my girlfriend, who wanted to give me manga: which volumes did I already own? That personal need grew into a library connecting collections, reading progress and upcoming French releases."},
+      {"heading": "My work", "body": "I develop and maintain the product end to end: the Nuxt interface, NestJS API, PostgreSQL database and production infrastructure. A React Native and Expo app extends the experience to mobile, with a synchronised library available offline."},
+      {"heading": "Key decisions", "body": "Publishers’ release schedules are normalised and matched to the catalogue while preserving their sources. Scheduled jobs automatically turn validated releases into catalogue volumes on their publication date. Covers are checked, optimised and stored on Cloudflare R2."},
+      {"heading": "The result", "body": "A free, ad-free web platform running in production and evolving with reader feedback. Collections, release calendars, wishlists and shareable profiles address real needs, with individual visibility settings. The mobile app is in closed beta."}
+    ]
+  },
+  "siamkitchen": {
+    "shortDescription": "An exploration of Strapi through a restaurant website, with a Nuxt interface and content managed through a CMS.",
+    "fullDescription": [
+      "Siam Kitchen is an experiment with Strapi: building a restaurant website whose content can be updated through a headless CMS.",
+      "The interface is built with Nuxt 3 and TypeScript. Strapi 5 provides content administration, while Nuxt handles the public-facing website.",
+      "The project helped me explore CMS integration with Nuxt and take a working website all the way to deployment."
+    ]
+  },
+  "star-citizen-tool": {
+    "shortDescription": "A spacecraft catalogue built to explore external API integration and pagination with Nuxt.",
+    "fullDescription": [
+      "Star Citizen Tool is a learning project focused on Nuxt 3, TypeScript and external API integration. It presents a catalogue of spacecraft and their specifications.",
+      "The data comes from StarCitizen-API. I implemented client-side pagination to browse it, with a larger initial data load due to the API’s constraints.",
+      "This project represents a stage in my development journey: fetching external data, building an interface to explore it and understanding performance trade-offs."
+    ]
+  },
+  "online-resume": {
+    "shortDescription": "A web CV built for a technical assessment using HTML, CSS and JavaScript, without a framework.",
+    "fullDescription": [
+      "Online Resume was a technical assessment for a start-up. The brief called for a simple website, without a framework and with a few JavaScript interactions."
+    ]
+  }
+}

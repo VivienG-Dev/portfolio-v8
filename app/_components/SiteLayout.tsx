@@ -1,47 +1,24 @@
-import type { Metadata } from "next";
-import { createPageMetadata, HOME_TITLE, HOME_DESCRIPTION, SITE_URL } from "@/lib/seo";
+import type { Locale } from "@/lib/i18n";
 import Script from 'next/script'
 import { Anek_Telugu } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Header } from "./_components/Header";
-import { Footer } from "./_components/Footer";
+import { Header } from "./Header";
+import { Footer } from "./Footer";
 import { Spacing } from "@/components/spacing";
 
 const anekTelugu = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
-export const metadata: Metadata = {
-  ...createPageMetadata({ title: HOME_TITLE, description: HOME_DESCRIPTION, path: "/" }),
-  metadataBase: new URL(SITE_URL),
-  authors: [{ name: "Vivien Grenier", url: SITE_URL }],
-  creator: "Vivien Grenier",
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-};
-
-export const viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
-
-export default function RootLayout({
-  children,
+export function SiteLayout({
+  children, locale,
 }: Readonly<{
   children: React.ReactNode;
+  locale: Locale;
 }>) {
   return (
-    <html lang="fr" className="h-full">
+    <html lang={locale} className="h-full" suppressHydrationWarning>
       <Script
         defer
         src="https://umami-e0gc00g8ooks40g40o800cws.jap-idols.com/script.js"
@@ -51,10 +28,10 @@ export default function RootLayout({
         className={`${GeistSans.variable} ${GeistMono.variable} ${anekTelugu.variable} font-sans antialiased h-full bg-background text-foreground`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Header />
+          <Header locale={locale} />
           {children}
           <Spacing />
-          <Footer />
+          <Footer locale={locale} />
         </ThemeProvider>
       </body>
     </html>

@@ -1,4 +1,6 @@
 "use client";
+import { dictionaries, type LocaleProps } from "@/lib/i18n";
+
 
 import React, { useRef } from "react";
 import { Section } from "../Section";
@@ -21,14 +23,15 @@ const createVariants = (delay = 0) => ({
   },
 });
 
-export const Contact = () => {
+export const Contact = ({ locale = "fr" }: LocaleProps) => {
+  const t = dictionaries[locale];
   const reduceMotion = useReducedMotion();
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
 
   return (
     <Section id="contact" className="flex flex-col gap-4">
-      <Title title="Contact" />
+      <Title title={t.contact} />
       <div ref={containerRef} className="flex flex-col md:flex-row items-start gap-4">
         <motion.div
           variants={createVariants(0)}
@@ -39,7 +42,7 @@ export const Contact = () => {
         >
           <ContactCard
             title="vivien.grenier@protonmail.com"
-            description="Me contacter par mail."
+            description={t.emailContact}
             url="mailto:vivien.grenier@protonmail.com"
             Icon={AtSign}
           />
@@ -52,7 +55,7 @@ export const Contact = () => {
         >
           <ContactCard
             title="Vivien Grenier"
-            description="Me contacter sur LinkedIn."
+            description={t.linkedinContact}
             url="https://www.linkedin.com/in/vivien-grenier/"
             Icon={LinkedInIcon}
           />
@@ -65,7 +68,7 @@ export const Contact = () => {
         >
           <ContactCard
             title="VivienG-Dev"
-            description="Voir mes projets sur Github."
+            description={t.githubContact}
             url="https://github.com/VivienG-Dev"
             Icon={GithubIcon}
           />
