@@ -35,9 +35,9 @@ export const SectionSkills = () => {
           animate={reduceMotion || isInView ? "visible" : "hidden"}
         >
           <Skills
-            title="Front-end"
-            description="Spécialisé en Vue.js et la Composition API, je conçois des interfaces modernes et performantes. J’utilise principalement Nuxt.js pour mes projets personnels, tout en travaillant actuellement avec Angular et en développant progressivement mon expérience sur Next.js et l’écosystème React."
-            technologies={["Vue.js", "Nuxt.js", "Angular", "Next.js", "TypeScript", "Composition API"]}
+            title="Web & mobile"
+            description="Je conçois des interfaces avec Vue et Nuxt, et je travaille avec Angular en contexte professionnel. Je développe également mes compétences en React Native et Expo à travers l’application mobile Manga Hive."
+            technologies={["Vue.js", "Nuxt", "Angular", "TypeScript", "React Native", "Expo"]}
           />
         </motion.div>
         <motion.div
@@ -47,9 +47,9 @@ export const SectionSkills = () => {
           animate={reduceMotion || isInView ? "visible" : "hidden"}
         >
           <Skills
-            title="Back-end"
-            description="Expérience en développement back-end avec Node.js, utilisant NestJS et Express pour créer des APIs RESTful. Familier avec la gestion de bases de données relationnelles MySQL et PostgreSQL."
-            technologies={["Node.js", "NestJS", "Express", "MySQL", "PostgreSQL", "REST API"]}
+            title="Back-end & données"
+            description="Je développe des API avec NestJS et PostgreSQL : authentification, règles métier et gestion des données. Sur Manga Hive, j’utilise Prisma, Redis et BullMQ pour relier le catalogue, le cache et les traitements en arrière-plan."
+            technologies={["Node.js", "NestJS", "PostgreSQL", "Prisma", "Redis", "BullMQ"]}
           />
         </motion.div>
         <motion.div
@@ -59,9 +59,9 @@ export const SectionSkills = () => {
           animate={reduceMotion || isInView ? "visible" : "hidden"}
         >
           <Skills
-            title="Outils & Design"
-            description="Maîtrise de TailwindCSS pour des interfaces modernes et responsives. Utilisation de Figma pour la conception et SASS pour des styles plus complexes. Expérience avec les outils de développement modernes."
-            technologies={["TailwindCSS", "SASS", "Figma", "Git", "Docker"]}
+            title="Mise en production"
+            description="Je déploie et maintiens Manga Hive sur un VPS avec Coolify, en séparant les environnements de prévisualisation et de production. Je prends aussi en charge l’optimisation des images et leur stockage sur Cloudflare R2, puis les corrections et les évolutions du produit."
+            technologies={["Docker", "Coolify", "Cloudflare R2", "Sharp", "Git"]}
           />
         </motion.div>
       </div>
