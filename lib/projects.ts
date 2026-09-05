@@ -7,6 +7,7 @@ export interface Project {
   title: string;
   shortDescription: string;
   fullDescription: string[];
+  caseStudy?: { heading: string; body: string }[];
   technologies: string[];
   imageUrl: string;
   githubUrl?: string;
@@ -24,5 +25,5 @@ export function getProjectById(id: string): Project | undefined {
 }
 
 export function getProjectIds(): string[] {
-  return projectsData.projects.map((project) => project.id);
+  return projectsData.projects.filter((project) => project.published).map((project) => project.id);
 }

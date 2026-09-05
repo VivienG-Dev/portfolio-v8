@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import { Section } from "../Section";
 import { Title } from "../Title";
 import { Skills } from "./Skills";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 
 const createVariants = (delay = 0) => ({
   hidden: { opacity: 0, y: 20 },
@@ -19,18 +19,20 @@ const createVariants = (delay = 0) => ({
 });
 
 export const SectionSkills = () => {
+  const reduceMotion = useReducedMotion();
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
 
   return (
-    <Section className="flex flex-col items-start gap-4" title="Compétences" rotate="rotate-90" position="-left-20">
+    <Section className="flex flex-col items-start gap-4" title="Compétences" rotate="-rotate-90" position="-right-20">
       <Title title="Compétences" />
       <div ref={containerRef} className="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
         <motion.div
           className="flex"
           variants={createVariants(0)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          transition={reduceMotion ? { duration: 0 } : undefined}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion || isInView ? "visible" : "hidden"}
         >
           <Skills
             title="Front-end"
@@ -41,8 +43,8 @@ export const SectionSkills = () => {
         <motion.div
           className="flex"
           variants={createVariants(0.2)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion || isInView ? "visible" : "hidden"}
         >
           <Skills
             title="Back-end"
@@ -53,8 +55,8 @@ export const SectionSkills = () => {
         <motion.div
           className="flex"
           variants={createVariants(0.4)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion || isInView ? "visible" : "hidden"}
         >
           <Skills
             title="Outils & Design"

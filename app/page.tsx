@@ -7,12 +7,12 @@ import { SectionSideProjects } from "./_components/projects/SectionSideProjects"
 
 export default function Home() {
   return (
-    <main>
+    <main id="contenu">
       <Hero />
       <Spacing />
-      <SectionExperiences />
-      <Spacing />
       <SectionSideProjects />
+      <Spacing />
+      <SectionExperiences />
       <Spacing />
       <SectionSkills />
       <Spacing />

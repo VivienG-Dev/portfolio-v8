@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { createPageMetadata, HOME_TITLE, HOME_DESCRIPTION, SITE_URL } from "@/lib/seo";
 import Script from 'next/script'
 import { Anek_Telugu } from "next/font/google";
 import "./globals.css";
@@ -12,49 +13,10 @@ import { Spacing } from "@/components/spacing";
 const anekTelugu = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
 export const metadata: Metadata = {
-  title: "VivienG | Développeur Front-end & Full Stack JavaScript",
-  description:
-    "Développeur spécialisé en Vue.js/Nuxt avec expertise en développement d'applications web modernes. \
-    Création d'interfaces performantes et solutions full stack sur mesure.",
-  keywords: [
-    "développeur front-end",
-    "Vue.js",
-    "Nuxt",
-    "JavaScript",
-    "TypeScript",
-    "développement web",
-    "full stack",
-    "applications web",
-    "interfaces utilisateur",
-    "développeur web France"
-  ],
-  authors: [{ name: "Vivien Grenier" }],
-  openGraph: {
-    title: "VivienG | Développeur Front-end & Full Stack JavaScript",
-    description:
-      "Développeur spécialisé en Vue.js/Nuxt avec expertise en développement d'applications web modernes. \
-      Création d'interfaces performantes et solutions full stack sur mesure.",
-    url: "https://www.vivieng.com",
-    siteName: "Portfolio VivienG - Développeur Web",
-    images: [
-      {
-        url: "https://www.vivieng.com/vivieng-meta-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Portfolio VivienG - Développeur Front-end & Full Stack",
-      },
-    ],
-    locale: "fr_FR",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "VivienG | Développeur Front-end & Full Stack JavaScript",
-    description:
-      "Développeur spécialisé en Vue.js/Nuxt avec expertise en développement d'applications web modernes. \
-      Création d'interfaces performantes et solutions full stack sur mesure.",
-    images: ["https://www.vivieng.com/vivieng-meta-image.jpg"],
-  },
+  ...createPageMetadata({ title: HOME_TITLE, description: HOME_DESCRIPTION, path: "/" }),
+  metadataBase: new URL(SITE_URL),
+  authors: [{ name: "Vivien Grenier", url: SITE_URL }],
+  creator: "Vivien Grenier",
   robots: {
     index: true,
     follow: true,

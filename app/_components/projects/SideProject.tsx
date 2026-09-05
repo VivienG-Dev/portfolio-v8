@@ -1,37 +1,19 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import { Project } from "@/lib/projects";
 
-type SideProjectProps = {
-  id: string;
-  published: boolean;
-  featured: boolean;
-  title: string;
-  shortDescription: string;
-  imageUrl: string;
-};
-
-export const SideProject = ({ title, shortDescription, id, imageUrl }: SideProjectProps) => {
-  return (
-    <div className="flex md:flex-col items-center gap-2 flex-1 shadow md:shadow-none bg-card border border-1 dark:border dark:border-customGold/30 dark:hover:border-customGold transition-all md:border-none md:bg-transparent rounded-lg p-4 xl:p-0 hover:shadow-lg md:hover:shadow-none duration-300 ">
-      <div className="flex-shrink-0 bg-transparent md:bg-card rounded-lg flex items-center justify-center overflow-hidden p-0 md:p-4 shadow hover:shadow-lg transition-shadow duration-300">
-        <Link href={`/project/${id}`}>
-          <Image
-            src={imageUrl}
-            alt={title}
-            width={320}
-            height={320}
-            className="rounded-lg w-full max-w-[120px] md:max-w-[220px] lg:max-w-[320px] md:w-auto"
-            sizes="(max-width: 768px) 25vw, (max-width: 1200px) 50vw, 30vw"
-            unoptimized
-          />
-        </Link>
-      </div>
-      <div className="text-center w-[70%]">
-        <Link href={`/project/${id}`}>
-          <p className="text-lg font-semibold">{title}</p>
-        </Link>
-        <p className="text-sm text-muted-foreground">{shortDescription}</p>
-      </div>
+export const SideProject = ({ title, shortDescription, id, imageUrl, technologies, prominent = false }: Project & { prominent?: boolean }) => (
+  <Link href={`/project/${id}`} className={`group flex h-full overflow-hidden rounded-2xl border border-customGold/20 bg-card transition-colors hover:border-customGold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-customGold ${prominent ? "flex-col md:flex-row" : "flex-col"}`}>
+    <div className={`relative overflow-hidden bg-muted/40 ${prominent ? "h-64 md:h-auto md:min-h-80 md:w-1/2" : "h-52"}`}>
+      <Image src={imageUrl} alt={`Aperçu de ${title}`} fill className="object-cover object-top" sizes={prominent ? "(max-width: 768px) 90vw, 45vw" : "(max-width: 768px) 90vw, 40vw"} />
     </div>
-  );
-};
+    <div className={`flex flex-1 flex-col items-start p-6 sm:p-8 ${prominent ? "justify-center md:w-1/2" : ""}`}>
+      {prominent && <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-customGold-dark dark:text-customGold">Projet phare · Web & mobile</p>}
+      <h3 className={`font-semibold tracking-tight text-primary ${prominent ? "text-3xl" : "text-xl"}`}>{title}</h3>
+      <p className="mt-3 leading-relaxed text-muted-foreground">{shortDescription}</p>
+      <div className="mt-5 flex flex-wrap gap-2">{(prominent ? ["Nuxt", "NestJS", "React Native"] : technologies.slice(0, 3)).map(tech => <span key={tech} className="rounded-md bg-muted px-2.5 py-1 text-xs text-muted-foreground">{tech}</span>)}</div>
+      <span className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary">Découvrir le projet <ArrowUpRight aria-hidden="true" size={17} className="transition-transform motion-safe:group-hover:-translate-y-0.5 motion-safe:group-hover:translate-x-0.5" /></span>
+    </div>
+  </Link>
+);

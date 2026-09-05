@@ -12,11 +12,11 @@ export async function generateStaticParams() {
 export default async function ProjectPage({ params }: { params: { projectName: string } }) {
   const project = await getProjectById(params.projectName);
 
-  if (!project) {
+  if (!project?.published) {
     notFound();
   }
   return (
-    <main>
+    <main id="contenu">
       <Spacing />
       <SectionSingleProject projectId={params.projectName} />
     </main>

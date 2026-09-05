@@ -16,11 +16,11 @@ export const ContactCard = ({ title, description, Icon, url }: ContactCardProps)
         <div className="flex-shrink-0 w-12 h-12 bg-accent/70 text-accent-foreground rounded-lg flex items-center justify-center overflow-hidden p-2">
           <Icon size={24} />
         </div>
-        <div>
-          <p className="text-md font-semibold">{title}</p>
+        <div className="min-w-0">
+          <p className="break-words text-sm font-semibold">{title}</p>
           <p className="text-sm text-muted-foreground">{description}</p>
         </div>
-        <ArrowUpRight size={24} className="ml-auto" strokeWidth={1} />
+        <ArrowUpRight size={24} className="ml-auto shrink-0" strokeWidth={1} />
       </Card>
     </Link>
   );

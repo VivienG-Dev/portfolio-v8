@@ -7,7 +7,7 @@ import { AtSign } from "lucide-react";
 import { Title } from "../Title";
 import { GithubIcon } from "../icons/GithubIcon";
 import { LinkedInIcon } from "../icons/LinkedInIcon";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 
 const createVariants = (delay = 0) => ({
   hidden: { opacity: 0, y: 20 },
@@ -22,17 +22,19 @@ const createVariants = (delay = 0) => ({
 });
 
 export const Contact = () => {
+  const reduceMotion = useReducedMotion();
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true, amount: 0.3 });
 
   return (
-    <Section className="flex flex-col gap-4">
+    <Section id="contact" className="flex flex-col gap-4">
       <Title title="Contact" />
       <div ref={containerRef} className="flex flex-col md:flex-row items-start gap-4">
         <motion.div
           variants={createVariants(0)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          transition={reduceMotion ? { duration: 0 } : undefined}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion || isInView ? "visible" : "hidden"}
           className="flex-1 w-full"
         >
           <ContactCard
@@ -44,8 +46,8 @@ export const Contact = () => {
         </motion.div>
         <motion.div
           variants={createVariants(0.2)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion || isInView ? "visible" : "hidden"}
           className="flex-1 w-full"
         >
           <ContactCard
@@ -57,8 +59,8 @@ export const Contact = () => {
         </motion.div>
         <motion.div
           variants={createVariants(0.4)}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          initial={reduceMotion ? false : "hidden"}
+          animate={reduceMotion || isInView ? "visible" : "hidden"}
           className="flex-1 w-full"
         >
           <ContactCard

@@ -1,42 +1,25 @@
 import type { Metadata } from "next";
-import { projects } from "@/content/projects.json";
+import { notFound } from "next/navigation";
+import { getProjectById } from "@/lib/projects";
+import { createPageMetadata } from "@/lib/seo";
 
 type Props = {
-  params: { projectName: string }
+  params: { projectName: string };
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const project = projects.find(p => p.id === params.projectName);
+export function generateMetadata({ params }: Props): Metadata {
+  const project = getProjectById(params.projectName);
+  if (!project?.published) notFound();
 
-  if (!project) {
-    return {
-      title: "Projet non trouvé | VivienG",
-      description: "Le projet demandé n'existe pas."
-    };
-  }
-
-  return {
-    title: `${project.title} | Projet VivienG`,
+  return createPageMetadata({
+    title: `${project.title} — ${project.featured ? "Projet indépendant" : "Expérimentation"} | Vivien Grenier`,
     description: project.shortDescription,
-    openGraph: {
-      title: `${project.title} | Projet VivienG - Développeur Front-end & Full Stack`,
-      description: project.shortDescription,
-      images: [
-        {
-          url: `https://www.vivieng.com${project.imageUrl}`,
-          width: 1200,
-          height: 630,
-          alt: `Aperçu du projet ${project.title}`,
-        },
-      ],
+    path: `/project/${project.id}`,
+    image: {
+      url: project.imageUrl,
+      alt: `Aperçu de ${project.title}, un projet de Vivien Grenier`,
     },
-    twitter: {
-      card: "summary_large_image",
-      title: `${project.title} | Projet VivienG`,
-      description: project.shortDescription,
-      images: [`https://www.vivieng.com${project.imageUrl}`],
-    },
-  };
+  });
 }
 
 export default function ProjectLayout({

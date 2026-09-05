@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { getProjectById } from "@/lib/projects";
 import { ChevronRight } from "lucide-react";
 import {
   Breadcrumb,
@@ -26,7 +27,7 @@ export const BreadcrumbComponent = ({ projectId }: BreadcrumbProps) => {
           <ChevronRight />
         </BreadcrumbSeparator>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/projects">Projects</BreadcrumbLink>
+          <BreadcrumbLink href="/projects">Projets</BreadcrumbLink>
         </BreadcrumbItem>
         {projectId && (
           <>
@@ -34,7 +35,7 @@ export const BreadcrumbComponent = ({ projectId }: BreadcrumbProps) => {
               <ChevronRight />
             </BreadcrumbSeparator>
             <BreadcrumbItem>
-              <BreadcrumbPage>{projectId}</BreadcrumbPage>
+              <BreadcrumbPage>{getProjectById(projectId)?.title ?? projectId}</BreadcrumbPage>
             </BreadcrumbItem>
           </>
         )}

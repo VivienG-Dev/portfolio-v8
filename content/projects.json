@@ -5,7 +5,7 @@
       "published": true,
       "featured": true,
       "title": "Manga Hive",
-      "shortDescription": "Une plateforme complète de découverte, de suivi et de partage autour du manga, accessible sur le web et via une application mobile iOS et Android",
+      "shortDescription": "Une plateforme indépendante, gratuite et sans publicité pour gérer sa collection de mangas, suivre ses lectures et retrouver les prochaines sorties françaises.",
       "fullDescription": [
         "Manga Hive est une plateforme complète de découverte, de suivi et de partage autour du manga, accessible sur le web et via une application mobile iOS et Android.",
         "Le backend repose sur NestJS, PostgreSQL et Prisma. Il gère l’authentification locale et OAuth, la synchronisation des bibliothèques, les profils sociaux, les notifications et l’ensemble du catalogue. Redis et BullMQ assurent le cache et les traitements en arrière-plan, notamment l’import automatisé de données. Les images sont optimisées avec Sharp puis stockées sur Cloudflare R2.",
@@ -34,23 +34,45 @@
         "Expo",
         "Coolify"
       ],
-      "imageUrl": "/manga-hive.jpg",
+      "imageUrl": "/manga-hive.webp",
       "githubUrl": "",
-      "projectUrl": "https://www.manga-hive.com/"
+      "projectUrl": "https://www.manga-hive.com/",
+      "caseStudy": [
+        {
+          "heading": "Le besoin",
+          "body": "Manga Hive est né d’une question de ma copine, qui voulait m’offrir des mangas : quels tomes avais-je déjà ? Ce besoin personnel a donné naissance à une bibliothèque qui relie collection, progression de lecture et prochaines sorties françaises."
+        },
+        {
+          "heading": "Mon travail",
+          "body": "Je développe et maintiens le produit de bout en bout : interface Nuxt, API NestJS, base PostgreSQL et infrastructure de production. Une application React Native et Expo prolonge cette expérience sur mobile, avec une bibliothèque synchronisée et consultable hors ligne."
+        },
+        {
+          "heading": "Les choix importants",
+          "body": "Les plannings des éditeurs sont normalisés et rapprochés du catalogue en conservant leur provenance. Les parutions validées deviennent automatiquement des tomes à leur date de sortie grâce aux traitements planifiés. Les couvertures sont contrôlées, optimisées et conservées sur Cloudflare R2."
+        },
+        {
+          "heading": "Le résultat",
+          "body": "Une plateforme web en production, gratuite et sans publicité, qui évolue avec les retours des lecteurs. Collection, calendrier, wishlist et profils partageables répondent à des usages concrets, avec des réglages de visibilité personnels. L’application mobile est en bêta fermée."
+        }
+      ]
     },
     {
       "id": "siamkitchen",
       "published": true,
-      "featured": true,
+      "featured": false,
       "title": "Siam Kitchen",
-      "shortDescription": "Site vitrine moderne pour un restaurant thaïlandais avec gestion de contenu dynamique",
+      "shortDescription": "Une exploration de Strapi à travers un site de restaurant, avec une interface Nuxt et des contenus administrables.",
       "fullDescription": [
-        "Siam Kitchen est une vitrine web professionnelle conçue pour offrir une expérience utilisateur optimale sur tous les appareils.",
-        "L'application frontend est développée avec Nuxt 3, exploitant le Server-Side Rendering (SSR) pour des performances optimales et le State-While-Revalidation (SWR) pour une gestion efficace du cache.",
-        "L'architecture suit rigoureusement les principes SOLID, avec une séparation claire des responsabilités entre composants, composables, services et stores.",
-        "Le backend utilise Strapi 5 comme CMS headless, offrant une interface d'administration intuitive pour la gestion des contenus et des utilisateurs."
+        "Siam Kitchen est un projet d’expérimentation autour de Strapi : créer un site de restaurant dont les contenus peuvent être mis à jour depuis un CMS headless.",
+        "L’interface est développée avec Nuxt 3 et TypeScript. Strapi 5 fournit l’administration des contenus, tandis que Nuxt prend en charge leur affichage côté site.",
+        "Le projet m’a permis d’explorer l’intégration d’un CMS avec Nuxt et d’aller jusqu’à la mise en ligne d’un site fonctionnel."
       ],
-      "technologies": ["Nuxt 3", "Tailwind 4", "TypeScript", "Strapi 5"],
+      "technologies": [
+        "Nuxt 3",
+        "Tailwind 4",
+        "TypeScript",
+        "Strapi 5"
+      ],
       "imageUrl": "/siam-kitchen.webp",
       "githubUrl": "https://github.com/VivienG-Dev/siamkitchen",
       "projectUrl": "https://www.siamkitchen.vivieng.com/"
@@ -58,14 +80,13 @@
     {
       "id": "star-citizen-tool",
       "published": true,
-      "featured": true,
+      "featured": false,
       "title": "Star Citizen Tool",
-      "shortDescription": "Un catalogue interactif des vaisseaux de Star Citizen avec visualisation détaillée des caractéristiques",
+      "shortDescription": "Un catalogue de vaisseaux pour explorer l’intégration d’une API externe et la pagination avec Nuxt.",
       "fullDescription": [
-        "Une application web moderne développée avec Nuxt 3, TypeScript et Tailwind CSS, offrant une interface intuitive pour explorer les vaisseaux de Star Citizen.",
-        "L'application intègre l'API REST StarCitizen-API pour la récupération des données. Ce projet m'a permis d'approfondir l'intégration d'APIs externes dans l'écosystème Nuxt.",
-        "J'ai implémenté un système de pagination côté client personnalisé pour gérer efficacement l'affichage des données, bien que cela implique un chargement initial plus conséquent dû aux limitations de l'API.",
-        "Le projet est entièrement fonctionnel mais évolutif, avec des améliorations prévues comme l'ajout de filtres par catégorie. Les contraintes de l'API m'ont poussé à développer des solutions créatives côté client."
+        "Star Citizen Tool est un projet d’apprentissage autour de Nuxt 3, TypeScript et de l’intégration d’une API externe. Il présente un catalogue de vaisseaux et leurs caractéristiques.",
+        "Les données proviennent de StarCitizen-API. J’ai développé une pagination côté client pour les parcourir, avec un chargement initial plus conséquent lié aux contraintes de l’API.",
+        "Ce projet témoigne d’une étape de mon parcours : récupérer des données externes, composer une interface de consultation et comprendre les compromis de performance."
       ],
       "technologies": [
         "Nuxt",
@@ -74,7 +95,7 @@
         "StarCitizen-API",
         "Rest API"
       ],
-      "imageUrl": "/star-citizen-tool.jpg",
+      "imageUrl": "/star-citizen-tool.webp",
       "githubUrl": "https://github.com/VivienG-Dev/star-citizen-tool",
       "projectUrl": "https://www.star-citizen-tool.vivieng.com/"
     },
@@ -83,12 +104,16 @@
       "published": true,
       "featured": false,
       "title": "Online Resume",
-      "shortDescription": "Mon cv en format web",
+      "shortDescription": "Un CV web réalisé pour un test technique, en HTML, CSS et JavaScript, sans framework.",
       "fullDescription": [
         "Online Resume est un petit test technique que j'ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
       ],
-      "technologies": ["HTML5", "CSS3", "JavaScript"],
-      "imageUrl": "/online-resume.jpg",
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "imageUrl": "/online-resume.webp",
       "githubUrl": "https://github.com/VivienG-Dev/cv_webformat_vivieng",
       "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
     },
@@ -102,7 +127,12 @@
         "Groupomania est le projet 7 du parcours Développeur web d'OpenClassrooms. L'objectif était de créer un réseau social interne pour une société fictive Groupomania en suivant un cahier des charges et certaines recommandations.",
         "Le back-end a été réalisé avec Node.js, Express et MySQL avec l'ORM Sequelize. Quand au front-end j'ai utilisé React. J'ai également utilisé Bootstrap pour faciliter la mise en forme."
       ],
-      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
+      "technologies": [
+        "React",
+        "Bootstrap",
+        "Node.js",
+        "MySQL"
+      ],
       "imageUrl": "/groupomania.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/VivienGrenier_7_14022022"
     },
@@ -117,7 +147,12 @@
         "Il est parfaitement responsive et dispose d'un 'dark mode'.",
         "Le design original provient de Pixelgrade."
       ],
-      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
+      "technologies": [
+        "React",
+        "Bootstrap",
+        "Node.js",
+        "MySQL"
+      ],
       "imageUrl": "/delicious-japan.jpg",
       "projectUrl": "https://www.deliciousjapan.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/1560982-Rosa-Restaurant-Website"
@@ -131,7 +166,12 @@
       "fullDescription": [
         "Cet exercise m'a permis d'apprendre à mieux gérer la création d'un site à partir d'un PSD. J'ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
       ],
-      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "SASS"
+      ],
       "imageUrl": "/picture-perfect.jpg",
       "projectUrl": "https://www.pictureperfect.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/2493496-Free-PSD-One-Page-Mobile-App"
@@ -146,7 +186,12 @@
         "Rénovation du site web de l'école Thaïlandaise dans laquelle j'ai étudié un certain temps.",
         "Le site officiel est toujours disponible. Malheureusement, l'école a changé."
       ],
-      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
+      "technologies": [
+        "HTML5",
+        "CSS3",
+        "Bootstrap 4",
+        "SASS"
+      ],
       "imageUrl": "/tsl-language-school.jpg",
       "projectUrl": "https://www.languageschool.vivieng.com/",
       "originalUrl": "https://tlslanguageschool.com/"
