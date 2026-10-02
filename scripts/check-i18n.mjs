@@ -51,7 +51,7 @@ for (const locale of ['fr', 'en']) {
     assert.ok(anchors.some(a => a.hrefLang === alternateLocale && a.href === pathFor(basePath, alternateLocale)), `${route}: language switch keeps the current page`);
     for (const a of anchors.filter(a => !a.hrefLang && a.href?.startsWith('/'))) {
       const path = a.href.split('#')[0];
-      if (/\.[a-z0-9]+$/i.test(path)) continue; // Shared assets such as the French CV.
+      if (/\.[a-z0-9]+$/i.test(path)) continue; // Static assets such as the CV PDFs.
       assert.equal(path === '/en' || path.startsWith('/en/'), locale === 'en', `${route}: cross-language internal link ${a.href}`);
       const target = resolve(out, path === '/' ? 'index.html' : `${path.slice(1)}.html`);
       await access(target);
@@ -61,7 +61,10 @@ for (const locale of ['fr', 'en']) {
     if (basePath === '/') {
       const cards = anchors.filter(a => /^(\/en)?\/project\//.test(a.href ?? ''));
       assert.deepEqual(cards.map(a => a.href), [pathFor('/project/manga-hive', locale)]);
-      assert.ok(html.includes(locale === 'en' ? 'CV (French)' : 'Mon CV'));
+      assert.ok(html.includes(locale === 'en' ? 'My CV' : 'Mon CV'));
+      const cv = locale === 'en' ? '/CV_Vivien_Grenier_2026_EN.pdf' : '/CV_Grenier_Vivien_2026.pdf';
+      assert.ok(anchors.some(a => a.href === cv), `${route}: CV link`);
+      await access(resolve(out, cv.slice(1)));
     }
     if (locale === 'en') {
       const text = decode(html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '').replace(/<style\b[^>]*>[\s\S]*?<\/style>/g, '').replace(/<[^>]*>/g, ' '));

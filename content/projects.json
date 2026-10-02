@@ -7,12 +7,12 @@
       "title": "Manga Hive",
       "shortDescription": "Une plateforme indépendante, gratuite et sans publicité pour gérer sa collection de mangas, suivre ses lectures et retrouver les prochaines sorties françaises.",
       "fullDescription": [
-        "Manga Hive est une plateforme complète de découverte, de suivi et de partage autour du manga, accessible sur le web et via une application mobile iOS et Android.",
-        "Le backend repose sur NestJS, PostgreSQL et Prisma. Il gère l’authentification locale et OAuth, la synchronisation des bibliothèques, les profils sociaux, les notifications et l’ensemble du catalogue. Redis et BullMQ assurent le cache et les traitements en arrière-plan, notamment l’import automatisé de données. Les images sont optimisées avec Sharp puis stockées sur Cloudflare R2.",
-        "La webapp est développée avec Nuxt 4, Vue 3, Tailwind CSS et Pinia. Son interface responsive s’appuie sur des composants personnalisés inspirés de shadcn/vue, tandis que VeeValidate et Zod sécurisent les formulaires. Une attention particulière est portée au référencement, à l’accessibilité, au thème clair/sombre et aux performances.",
+        "Manga Hive est une plateforme complète de découverte, de suivi et de partage autour du manga, accessible sur le web et via une application Android disponible sur Google Play.",
+        "Le backend repose sur NestJS, PostgreSQL et Prisma. Il gère l’authentification locale et OAuth, la synchronisation des bibliothèques, les profils sociaux, les notifications et l’ensemble du catalogue. Ce catalogue des éditions françaises est propriétaire : près de 5 000 séries et 34 000 tomes, alimentés par mes propres outils d’import, sans API tierce. Redis et BullMQ assurent le cache et les traitements en arrière-plan, notamment l’import automatisé de données. Les images sont optimisées avec Sharp puis stockées sur Cloudflare R2.",
+        "La webapp est développée avec Nuxt 4, Vue 3, Tailwind CSS et Pinia. Son interface responsive s’appuie sur des composants UI maison, tandis que VeeValidate et Zod sécurisent les formulaires. Une attention particulière est portée au référencement, à l’accessibilité, au thème clair/sombre et aux performances.",
         "Une application mobile construite avec React Native et Expo complète l’écosystème. Elle propose une bibliothèque synchronisée et accessible hors ligne, les connexions par e-mail, Google et Apple, des notifications, un calendrier des sorties et un widget affichant les prochaines sorties.",
         "Manga Hive permet notamment de rechercher des mangas, suivre ses tomes et sa progression de lecture, gérer ses favoris et sa wishlist, consulter les sorties françaises, attribuer des notes, publier des commentaires, débloquer des badges et interagir avec ses amis grâce aux profils, recommandations et fonctionnalités communautaires.",
-        "La plateforme est aujourd’hui opérationnelle en production dans sa version 3.1.0. Elle est hébergée sur un VPS Hostinger et administrée avec Coolify, avec des environnements distincts pour la prévisualisation et la production. L’application mobile est actuellement en phase de bêta fermée dans sa version 0.9.5."
+        "Lancée en 2026 après un développement commencé en 2024, la plateforme est hébergée sur un VPS Hostinger et administrée avec Coolify, avec des environnements distincts pour la prévisualisation et la production. L’application Android est disponible sur Google Play."
       ],
       "technologies": [
         "TypeScript",
@@ -34,9 +34,10 @@
         "Expo",
         "Coolify"
       ],
-      "imageUrl": "/manga-hive.webp",
+      "imageUrl": "/manga-hive-2.webp",
       "githubUrl": "",
       "projectUrl": "https://www.manga-hive.com/",
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mangahive.mobile",
       "caseStudy": [
         {
           "heading": "Le besoin",
@@ -44,15 +45,15 @@
         },
         {
           "heading": "Mon travail",
-          "body": "Je développe et maintiens le produit de bout en bout : interface Nuxt, API NestJS, base PostgreSQL et infrastructure de production. Une application React Native et Expo prolonge cette expérience sur mobile, avec une bibliothèque synchronisée et consultable hors ligne."
+          "body": "Je développe et maintiens le produit de bout en bout : interface Nuxt, API NestJS, base PostgreSQL et infrastructure de production. Une application Android, développée avec React Native et Expo et publiée sur Google Play, prolonge cette expérience sur mobile, avec une bibliothèque synchronisée et consultable hors ligne."
         },
         {
           "heading": "Les choix importants",
-          "body": "Les plannings des éditeurs sont normalisés et rapprochés du catalogue en conservant leur provenance. Les parutions validées deviennent automatiquement des tomes à leur date de sortie grâce aux traitements planifiés. Les couvertures sont contrôlées, optimisées et conservées sur Cloudflare R2."
+          "body": "Le catalogue des éditions françaises est propriétaire : près de 5 000 séries et 34 000 tomes, sans API tierce. Les plannings des éditeurs sont normalisés et rapprochés du catalogue en conservant leur provenance. Les parutions validées deviennent automatiquement des tomes à leur date de sortie grâce aux traitements planifiés. Les couvertures sont contrôlées, optimisées et conservées sur Cloudflare R2."
         },
         {
           "heading": "Le résultat",
-          "body": "Une plateforme web en production, gratuite et sans publicité, qui évolue avec les retours des lecteurs. Collection, calendrier, wishlist et profils partageables répondent à des usages concrets, avec des réglages de visibilité personnels. L’application mobile est en bêta fermée."
+          "body": "Une plateforme web en production, gratuite et sans publicité, qui évolue avec les retours des lecteurs. Collection, calendrier, wishlist et profils partageables répondent à des usages concrets, avec des réglages de visibilité personnels. L’application Android est disponible sur Google Play."
         }
       ]
     },
@@ -67,12 +68,7 @@
         "L’interface est développée avec Nuxt 3 et TypeScript. Strapi 5 fournit l’administration des contenus, tandis que Nuxt prend en charge leur affichage côté site.",
         "Le projet m’a permis d’explorer l’intégration d’un CMS avec Nuxt et d’aller jusqu’à la mise en ligne d’un site fonctionnel."
       ],
-      "technologies": [
-        "Nuxt 3",
-        "Tailwind 4",
-        "TypeScript",
-        "Strapi 5"
-      ],
+      "technologies": ["Nuxt 3", "Tailwind 4", "TypeScript", "Strapi 5"],
       "imageUrl": "/siam-kitchen.webp",
       "githubUrl": "https://github.com/VivienG-Dev/siamkitchen",
       "projectUrl": "https://www.siamkitchen.vivieng.com/"
@@ -108,11 +104,7 @@
       "fullDescription": [
         "Online Resume est un petit test technique que j'ai réalisé pour une start-up. Il était demandé quelque chose de simple, sans framework et avec quelques touches de JavaScript."
       ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript"
-      ],
+      "technologies": ["HTML5", "CSS3", "JavaScript"],
       "imageUrl": "/online-resume.webp",
       "githubUrl": "https://github.com/VivienG-Dev/cv_webformat_vivieng",
       "projectUrl": "https://vivieng-dev.github.io/cv_webformat_vivieng/"
@@ -127,12 +119,7 @@
         "Groupomania est le projet 7 du parcours Développeur web d'OpenClassrooms. L'objectif était de créer un réseau social interne pour une société fictive Groupomania en suivant un cahier des charges et certaines recommandations.",
         "Le back-end a été réalisé avec Node.js, Express et MySQL avec l'ORM Sequelize. Quand au front-end j'ai utilisé React. J'ai également utilisé Bootstrap pour faciliter la mise en forme."
       ],
-      "technologies": [
-        "React",
-        "Bootstrap",
-        "Node.js",
-        "MySQL"
-      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
       "imageUrl": "/groupomania.jpg",
       "githubUrl": "https://github.com/VivienG-Dev/VivienGrenier_7_14022022"
     },
@@ -147,12 +134,7 @@
         "Il est parfaitement responsive et dispose d'un 'dark mode'.",
         "Le design original provient de Pixelgrade."
       ],
-      "technologies": [
-        "React",
-        "Bootstrap",
-        "Node.js",
-        "MySQL"
-      ],
+      "technologies": ["React", "Bootstrap", "Node.js", "MySQL"],
       "imageUrl": "/delicious-japan.jpg",
       "projectUrl": "https://www.deliciousjapan.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/1560982-Rosa-Restaurant-Website"
@@ -166,12 +148,7 @@
       "fullDescription": [
         "Cet exercise m'a permis d'apprendre à mieux gérer la création d'un site à partir d'un PSD. J'ai également apporter des petites modifications personnelles (texte trop petit sur le PSD et pas du tout user-friendly) mais aussi sur la partie « featured » ainsi que les liens du site."
       ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "Bootstrap 4",
-        "SASS"
-      ],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
       "imageUrl": "/picture-perfect.jpg",
       "projectUrl": "https://www.pictureperfect.vivieng.com/",
       "mockupUrl": "https://dribbble.com/shots/2493496-Free-PSD-One-Page-Mobile-App"
@@ -186,12 +163,7 @@
         "Rénovation du site web de l'école Thaïlandaise dans laquelle j'ai étudié un certain temps.",
         "Le site officiel est toujours disponible. Malheureusement, l'école a changé."
       ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "Bootstrap 4",
-        "SASS"
-      ],
+      "technologies": ["HTML5", "CSS3", "Bootstrap 4", "SASS"],
       "imageUrl": "/tsl-language-school.jpg",
       "projectUrl": "https://www.languageschool.vivieng.com/",
       "originalUrl": "https://tlslanguageschool.com/"

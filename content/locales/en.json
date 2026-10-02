@@ -12,7 +12,7 @@
   "heroIntro": "I build web applications with Vue/Nuxt and NestJS, from the interface to production.",
   "heroDetail": "With a focus on thoughtful interfaces, reliability and the people who use them.",
   "viewProjects": "Explore my work",
-  "cv": "CV (French)",
+  "cv": "My CV",
   "available": "Available",
   "busy": "Currently employed",
   "rights": "All rights reserved.",
@@ -29,6 +29,7 @@
   "experimentLabel": "Experiment & early project",
   "viewSite": "Visit website",
   "viewGithub": "View on GitHub",
+  "viewPlayStore": "View on Google Play",
   "mockup": "Design mockup",
   "originalSite": "Original website",
   "aboutProject": "About the project",
@@ -52,8 +53,9 @@
   "spinStart": "August 2022",
   "spinEnd": "December 2023",
   "neuralixPoints": [
-    "Building medical applications with Angular, NestJS and PostgreSQL.",
+    "Building critical medical applications used by several thousand practitioners, with Angular, NestJS and PostgreSQL.",
     "Centralising business rules on the server and writing automated tests for critical features.",
+    "Automating paper-based tests (data collection and scoring), saving practitioners 1.5 hours per patient.",
     "Contributing to architecture decisions and defining specifications with the team."
   ],
   "spinforeatPoints": [
@@ -62,7 +64,7 @@
     "Integrating the internal API in collaboration with the back-end team."
   ],
   "skill0Title": "Web & mobile",
-  "skill0Description": "I build interfaces with Vue and Nuxt, and work with Angular professionally. I am also developing my React Native and Expo skills through the Manga Hive mobile app.",
+  "skill0Description": "I build interfaces with Vue and Nuxt, and work with Angular professionally. I also built the Manga Hive Android app with React Native and Expo, and published it on Google Play.",
   "skill1Title": "Back-end & data",
   "skill1Description": "I build APIs with NestJS and PostgreSQL, covering authentication, business rules and data management. In Manga Hive, I use Prisma, Redis and BullMQ to connect the catalogue, caching and background processing.",
   "skill2Title": "Production & maintenance",

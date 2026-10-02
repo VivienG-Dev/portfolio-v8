@@ -8,6 +8,7 @@ import { AvailabilityStatus } from "./AvailabilityStatus";
 
 export const Hero = ({ locale = "fr" }: LocaleProps) => {
   const t = dictionaries[locale];
+  const cvHref = locale === "en" ? "/CV_Vivien_Grenier_2026_EN.pdf" : "/CV_Grenier_Vivien_2026.pdf";
   return (
   <div className="overflow-hidden border-b border-customGold/15 bg-gradient-to-br from-customGold/10 via-background to-background">
     <Section className="grid items-center gap-10 py-12 md:grid-cols-[1.3fr_1fr] md:py-20 lg:py-24">
@@ -23,7 +24,7 @@ export const Hero = ({ locale = "fr" }: LocaleProps) => {
         <p className="mt-3 max-w-xl leading-relaxed text-muted-foreground">{t.heroDetail}</p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Button asChild size="lg" className="gap-2"><Link href="#projets">{t.viewProjects} <ArrowDown size={16} /></Link></Button>
-          <Button asChild size="lg" variant="outline" className="gap-2"><Link href="/CV_Grenier_Vivien_2025.pdf">{t.cv} <FileText size={16} /></Link></Button>
+          <Button asChild size="lg" variant="outline" className="gap-2"><Link href={cvHref}>{t.cv} <FileText size={16} /></Link></Button>
         </div>
       </div>
       <div className="hidden justify-center md:flex">

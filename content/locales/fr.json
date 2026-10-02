@@ -29,6 +29,7 @@
   "experimentLabel": "Expérimentation & premier projet",
   "viewSite": "Voir le site",
   "viewGithub": "Voir sur GitHub",
+  "viewPlayStore": "Voir sur Google Play",
   "mockup": "Maquette",
   "originalSite": "Site original",
   "aboutProject": "À propos du projet",
@@ -52,8 +53,9 @@
   "spinStart": "Août 2022",
   "spinEnd": "Décembre 2023",
   "neuralixPoints": [
-    "Développement d’applications médicales avec Angular, NestJS et PostgreSQL.",
+    "Développement d’applications médicales critiques, utilisées par plusieurs milliers de praticiens, avec Angular, NestJS et PostgreSQL.",
     "Centralisation des règles métier côté serveur et tests automatisés des fonctionnalités critiques.",
+    "Automatisation de tests papier (collecte et notation) : 1 h 30 gagnée par patient pour le praticien.",
     "Participation aux choix d’architecture et à la définition des spécifications avec l’équipe."
   ],
   "spinforeatPoints": [
@@ -62,7 +64,7 @@
     "Intégration de l’API interne en collaboration avec l’équipe back-end."
   ],
   "skill0Title": "Web & mobile",
-  "skill0Description": "Je conçois des interfaces avec Vue et Nuxt, et je travaille avec Angular en contexte professionnel. Je développe également mes compétences en React Native et Expo à travers l’application mobile Manga Hive.",
+  "skill0Description": "Je conçois des interfaces avec Vue et Nuxt, et je travaille avec Angular en contexte professionnel. J’ai aussi développé et publié sur Google Play l’application Android de Manga Hive, avec React Native et Expo.",
   "skill1Title": "Back-end & données",
   "skill1Description": "Je développe des API avec NestJS et PostgreSQL : authentification, règles métier et gestion des données. Sur Manga Hive, j’utilise Prisma, Redis et BullMQ pour relier le catalogue, le cache et les traitements en arrière-plan.",
   "skill2Title": "Mise en production",

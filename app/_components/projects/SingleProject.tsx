@@ -16,6 +16,7 @@ export const SingleProject = ({ project, locale = "fr" }: { project: Project } &
         <p className="mt-5 text-lg leading-relaxed text-muted-foreground">{project.shortDescription}</p>
         <div className="mt-6 flex flex-wrap gap-3">
           {project.projectUrl && <Button asChild className="gap-2"><Link href={project.projectUrl}>{t.viewSite} <ArrowUpRight size={16} /></Link></Button>}
+          {project.playStoreUrl && <Button asChild variant="outline" className="gap-2"><Link href={project.playStoreUrl}>{t.viewPlayStore} <ArrowUpRight size={16} /></Link></Button>}
           {project.githubUrl && <Button asChild variant="outline"><Link href={project.githubUrl}>{t.viewGithub}</Link></Button>}
           {project.mockupUrl && <Button asChild variant="outline"><Link href={project.mockupUrl}>{t.mockup}</Link></Button>}
           {project.originalUrl && <Button asChild variant="outline"><Link href={project.originalUrl}>{t.originalSite}</Link></Button>}
