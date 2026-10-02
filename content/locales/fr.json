@@ -53,7 +53,7 @@
   "spinStart": "Août 2022",
   "spinEnd": "Décembre 2023",
   "neuralixPoints": [
-    "Développement d’applications médicales critiques, utilisées par plusieurs milliers de praticiens, avec Angular, NestJS et PostgreSQL.",
+    "Développement d’applications médicales (Angular, NestJS, PostgreSQL) utilisées par plus de 2 000 psychomotriciens dans quatre pays ; environ 50 000 patients évalués via NP-MOT.",
     "Centralisation des règles métier côté serveur et tests automatisés des fonctionnalités critiques.",
     "Automatisation de tests papier (collecte et notation) : 1 h 30 gagnée par patient pour le praticien.",
     "Participation aux choix d’architecture et à la définition des spécifications avec l’équipe."
