@@ -16,6 +16,14 @@
       {"heading": "The result", "body": "A free, ad-free web platform running in production and evolving with reader feedback. Collections, release calendars, wishlists and shareable profiles address real needs, with individual visibility settings. The Android app is available on Google Play."}
     ]
   },
+  "sillysimple": {
+    "shortDescription": "A free, open-source desktop app to chat with AI characters on your own computer, with no account, no terminal and nothing to set up.",
+    "fullDescription": [
+      "SillySimple is a desktop app for macOS and Windows that makes AI character roleplay accessible to everyone. As a former SillyTavern user, I wanted to keep the best of it (character cards, lorebooks, personas) while removing the setup that puts most people off.",
+      "The app is built with Electron, Vue 3, Vite and TypeScript. On first launch it picks a model that fits the graphics card, downloads it and runs it locally, so conversations never leave the computer. It also connects to Ollama, LM Studio, KoboldCpp or any OpenAI-compatible server, as well as the Claude, OpenAI, Mistral and OpenRouter APIs. Conversations are stored in SQLite, and a small embedding model, EmbeddingGemma, reads the characters’ mood to shift the atmosphere of the interface.",
+      "It stays compatible with SillyTavern cards (V2 and V3, PNG or JSON) and offers ready-to-play stories, chats with several characters, replies rewritten on demand and text-to-speech. The macOS build is signed and notarised, updates are automatic, and the Nuxt landing site is hosted on my VPS with Coolify. The project is open source under the GPL-3.0 licence."
+    ]
+  },
   "siamkitchen": {
     "shortDescription": "An exploration of Strapi through a restaurant website, with a Nuxt interface and content managed through a CMS.",
     "fullDescription": [

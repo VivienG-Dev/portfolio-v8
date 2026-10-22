@@ -58,8 +58,35 @@
       ]
     },
     {
-      "id": "siamkitchen",
+      "id": "sillysimple",
       "published": true,
+      "featured": false,
+      "title": "SillySimple",
+      "shortDescription": "Une application de bureau libre et gratuite pour discuter avec des personnages IA sur son propre ordinateur, sans compte, sans terminal et sans rien à configurer.",
+      "fullDescription": [
+        "SillySimple est une application de bureau pour macOS et Windows qui rend le jeu de rôle avec des personnages IA accessible à tous. Ancien utilisateur de SillyTavern, j’ai voulu en garder le meilleur (cartes de personnages, lorebooks, personas) en supprimant la configuration qui décourage la plupart des gens.",
+        "L’application est développée avec Electron, Vue 3, Vite et TypeScript. Au premier lancement, elle choisit un modèle adapté à la carte graphique, le télécharge et le fait tourner en local : les conversations ne quittent jamais l’ordinateur. Elle se connecte aussi à Ollama, LM Studio, KoboldCpp ou à tout serveur compatible OpenAI, ainsi qu’aux API de Claude, OpenAI, Mistral et OpenRouter. Les conversations sont stockées dans SQLite, et un petit modèle d’embedding, EmbeddingGemma, lit l’humeur des personnages pour faire évoluer l’ambiance de l’interface.",
+        "Elle reste compatible avec les cartes SillyTavern (V2 et V3, en PNG ou JSON) et propose des histoires prêtes à jouer, des conversations à plusieurs personnages, des réponses réécrites à la demande et la lecture à voix haute. La version macOS est signée et notarisée, les mises à jour sont automatiques, et le site de présentation, réalisé avec Nuxt, est hébergé sur mon VPS avec Coolify. Le projet est open source, sous licence GPL-3.0."
+      ],
+      "technologies": [
+        "TypeScript",
+        "Electron",
+        "Vue 3",
+        "Vite",
+        "Pinia",
+        "SQLite",
+        "Ollama",
+        "EmbeddingGemma",
+        "Vitest",
+        "Nuxt 4"
+      ],
+      "imageUrl": "/sillysimple.webp",
+      "githubUrl": "https://github.com/VivienG-Dev/sillysimple",
+      "projectUrl": "https://sillysimple.app/"
+    },
+    {
+      "id": "siamkitchen",
+      "published": false,
       "featured": false,
       "title": "Siam Kitchen",
       "shortDescription": "Une exploration de Strapi à travers un site de restaurant, avec une interface Nuxt et des contenus administrables.",
@@ -75,7 +102,7 @@
     },
     {
       "id": "star-citizen-tool",
-      "published": true,
+      "published": false,
       "featured": false,
       "title": "Star Citizen Tool",
       "shortDescription": "Un catalogue de vaisseaux pour explorer l’intégration d’une API externe et la pagination avec Nuxt.",
