@@ -30,6 +30,7 @@
   "viewSite": "Voir le site",
   "viewGithub": "Voir sur GitHub",
   "viewPlayStore": "Voir sur Google Play",
+  "viewAppStore": "Voir sur l’App Store",
   "mockup": "Maquette",
   "originalSite": "Site original",
   "aboutProject": "À propos du projet",
@@ -64,7 +65,7 @@
     "Intégration de l’API interne en collaboration avec l’équipe back-end."
   ],
   "skill0Title": "Web & mobile",
-  "skill0Description": "Je conçois des interfaces avec Vue et Nuxt, et je travaille avec Angular en contexte professionnel. J’ai aussi développé et publié sur Google Play l’application Android de Manga Hive, avec React Native et Expo.",
+  "skill0Description": "Je conçois des interfaces avec Vue et Nuxt, et je travaille avec Angular en contexte professionnel. J’ai aussi développé et publié sur l’App Store et Google Play l’application mobile de Manga Hive, avec React Native et Expo.",
   "skill1Title": "Back-end & données",
   "skill1Description": "Je développe des API avec NestJS et PostgreSQL : authentification, règles métier et gestion des données. Sur Manga Hive, j’utilise Prisma, Redis et BullMQ pour relier le catalogue, le cache et les traitements en arrière-plan.",
   "skill2Title": "Mise en production",

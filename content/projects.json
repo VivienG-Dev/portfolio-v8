@@ -7,12 +7,12 @@
       "title": "Manga Hive",
       "shortDescription": "Une plateforme indépendante, gratuite et sans publicité pour gérer sa collection de mangas, suivre ses lectures et retrouver les prochaines sorties françaises.",
       "fullDescription": [
-        "Manga Hive est une plateforme complète de découverte, de suivi et de partage autour du manga, accessible sur le web et via une application Android disponible sur Google Play.",
+        "Manga Hive est une plateforme complète de découverte, de suivi et de partage autour du manga, accessible sur le web et via des applications iOS et Android disponibles sur l’App Store et Google Play.",
         "Le backend repose sur NestJS, PostgreSQL et Prisma. Il gère l’authentification locale et OAuth, la synchronisation des bibliothèques, les profils sociaux, les notifications et l’ensemble du catalogue. Ce catalogue des éditions françaises est propriétaire : près de 5 000 séries et 34 000 tomes, alimentés par mes propres outils d’import, sans API tierce. Redis et BullMQ assurent le cache et les traitements en arrière-plan, notamment l’import automatisé de données. Les images sont optimisées avec Sharp puis stockées sur Cloudflare R2.",
         "La webapp est développée avec Nuxt 4, Vue 3, Tailwind CSS et Pinia. Son interface responsive s’appuie sur des composants UI maison, tandis que VeeValidate et Zod sécurisent les formulaires. Une attention particulière est portée au référencement, à l’accessibilité, au thème clair/sombre et aux performances.",
         "Une application mobile construite avec React Native et Expo complète l’écosystème. Elle propose une bibliothèque synchronisée et accessible hors ligne, les connexions par e-mail, Google et Apple, des notifications, un calendrier des sorties et un widget affichant les prochaines sorties.",
         "Manga Hive permet notamment de rechercher des mangas, suivre ses tomes et sa progression de lecture, gérer ses favoris et sa wishlist, consulter les sorties françaises, attribuer des notes, publier des commentaires, débloquer des badges et interagir avec ses amis grâce aux profils, recommandations et fonctionnalités communautaires.",
-        "Lancée en 2026 après un développement commencé en 2024, la plateforme est hébergée sur un VPS Hostinger et administrée avec Coolify, avec des environnements distincts pour la prévisualisation et la production. L’application Android est disponible sur Google Play."
+        "Lancée en 2026 après un développement commencé en 2024, la plateforme est hébergée sur un VPS et administrée avec Coolify, avec des environnements distincts pour la prévisualisation et la production. L’application mobile est disponible sur l’App Store et Google Play."
       ],
       "technologies": [
         "TypeScript",
@@ -34,10 +34,11 @@
         "Expo",
         "Coolify"
       ],
-      "imageUrl": "/manga-hive-2.webp",
+      "imageUrl": "/manga-hive-3.webp",
       "githubUrl": "",
       "projectUrl": "https://www.manga-hive.com/",
       "playStoreUrl": "https://play.google.com/store/apps/details?id=com.mangahive.mobile",
+      "appStoreUrl": "https://apps.apple.com/fr/app/manga-hive/id6821124979",
       "caseStudy": [
         {
           "heading": "Le besoin",
@@ -45,7 +46,7 @@
         },
         {
           "heading": "Mon travail",
-          "body": "Je développe et maintiens le produit de bout en bout : interface Nuxt, API NestJS, base PostgreSQL et infrastructure de production. Une application Android, développée avec React Native et Expo et publiée sur Google Play, prolonge cette expérience sur mobile, avec une bibliothèque synchronisée et consultable hors ligne."
+          "body": "Je développe et maintiens le produit de bout en bout : interface Nuxt, API NestJS, base PostgreSQL et infrastructure de production. Une application iOS et Android, développée avec React Native et Expo et publiée sur l’App Store et Google Play, prolonge cette expérience sur mobile, avec une bibliothèque synchronisée et consultable hors ligne."
         },
         {
           "heading": "Les choix importants",
@@ -53,7 +54,7 @@
         },
         {
           "heading": "Le résultat",
-          "body": "Une plateforme web en production, gratuite et sans publicité, qui évolue avec les retours des lecteurs. Collection, calendrier, wishlist et profils partageables répondent à des usages concrets, avec des réglages de visibilité personnels. L’application Android est disponible sur Google Play."
+          "body": "Une plateforme web en production, gratuite et sans publicité, qui évolue avec les retours des lecteurs. Collection, calendrier, wishlist et profils partageables répondent à des usages concrets, avec des réglages de visibilité personnels. L’application mobile est disponible sur l’App Store et Google Play."
         }
       ]
     },

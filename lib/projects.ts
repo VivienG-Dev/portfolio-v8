@@ -15,6 +15,7 @@ export interface Project {
   githubUrl?: string;
   projectUrl?: string;
   playStoreUrl?: string;
+  appStoreUrl?: string;
   mockupUrl?: string;
   originalUrl?: string;
 }
